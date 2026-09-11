@@ -1,0 +1,109 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.sidebar {
+  border-right: 1px solid #d1d5db;
+  width: 240px;
+  background: #ffffff;
+  transition: width 0.2s ease-in-out;
+  flex-shrink: 0;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+}
+
+.sidebar--collapsed {
+  width: 84px;
+}
+
+.content {
+  position: absolute;
+  flex: 1;
+  padding: 16px;
+}
+
+.toggle-btn {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.karvon-part {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.h33 {
+  margin-top: 26px;
+}
+
+.black--collapsed {
+  width: 45px;
+}
+
+.black {
+  background-color: black;
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 28px;
+  margin-left: 18px;
+}
+
+.facilities {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-left: 30px;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.fac {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.fac p {
+  font-size: 15px;
+  color: #737373;
+}
+
+.div-end {
+  margin-left: 35px;
+  margin-top: 210px;
+}
+
+.div-end p {
+  font-size: 13px;
+  color: #a3a3a3;
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 20px;
+  right: -16px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.icon-rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
