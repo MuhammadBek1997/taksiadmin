@@ -1,0 +1,126 @@
+.support-panel {
+  width: 320px;
+  height: 100%;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.support-search-wrapper {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.support-search-input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.support-search-icon {
+  position: absolute;
+  left: 12px;
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.support-search-input {
+  width: 100%;
+  height: 36px;
+  padding: 8px 12px 8px 36px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #111827;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.support-search-input::placeholder {
+  color: #9ca3af;
+}
+
+.support-search-input:focus {
+  border-color: #d1d5db;
+  background-color: #ffffff;
+}
+
+.support-chats-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.support-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f3f4f6;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.15s ease;
+}
+
+.support-item:hover {
+  background-color: #f9fafb;
+}
+
+.support-item.active {
+  background-color: #f3f4f6;
+}
+
+.support-avatar-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.support-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.support-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.support-user-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.support-time {
+  font-size: 11.5px;
+  color: #9ca3af;
+  flex-shrink: 0;
+  margin-left: 6px;
+}
+
+.support-message {
+  font-size: 12.5px;
+  color: #6b7280;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.support-unread-badge {
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
