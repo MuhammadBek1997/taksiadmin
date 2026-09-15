@@ -1,10 +1,27 @@
 import React from 'react'
 import '../styles/Navbar.css'
+import { useLocation } from 'react-router-dom'
+
+const titles = {
+    "/": "Dashboard",
+    "/map": "Xarita",
+    "/drivers": "Haydovchilar",
+    "/couriers": "Kuryerlar",
+    "/orders": "Buyurtmalar",
+    "/clients": "Mijozlar",
+    "/reports": "Hisobotlar",
+    "/support": "Yordam",
+    "/settings": "Tizim Sozlamalari",
+}
+
 
 const Navbar = () => {
+
+    const location = useLocation()
+    const currentTitle = titles[location.pathname] || "Sahifa"
     return (
         <div className="navbar">
-            <h2 className="navbar__title">Tizim Sozlamalari</h2>
+            <h2 className="navbar__title">{currentTitle}</h2>
 
             <div className="navbar__right">
                 <div className="navbar__search">

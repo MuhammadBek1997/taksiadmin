@@ -12,7 +12,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  overflow: hidden; 
+  overflow: hidden;
   min-width: 0;
 }
 
@@ -24,6 +24,6 @@
 
 @media (max-width: 768px) {
   .app-main {
-    margin-left: 84px;    
+    margin-left: 84px;
   }
 }

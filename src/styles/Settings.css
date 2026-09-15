@@ -19,7 +19,7 @@
 }
 
 .input-cont {
-    padding-right: 10px;
+  padding-right: 10px;
   display: flex;
   gap: 25px;
   margin-top: 18px;
@@ -31,7 +31,7 @@
 }
 
 .input1 {
-    margin-top: 14px;
+  margin-top: 14px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -62,7 +62,6 @@
 }
 
 .input-cont2 {
-    
   margin-top: 26px;
   display: flex;
   gap: 25px;
@@ -99,7 +98,7 @@
 }
 
 .middle {
-    padding-left: 30px;
+  padding-left: 30px;
   padding: 20px;
   background-color: #ffffff;
   width: 99%;
@@ -116,9 +115,6 @@
   gap: 25px;
   padding: 6px;
 }
-
-
-
 
 .END {
   display: flex;
@@ -203,4 +199,49 @@
 
 .switch input:checked + .slider::before {
   transform: translateX(18px);
+}
+
+.fac {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  width: 170px;
+  transition: right 0.4s ease-in-out;
+}
+
+.sidebar--collapsed .fac {
+  width: 20px;
+  transition: right 0.6s ease-in-out;
+}
+
+.fac--active {
+  background-color: #f3f4f6;
+}
+
+.fac--active p {
+  color: #111827;
+  font-weight: 700;
+}
+
+.fac--active img {
+  filter: brightness(0);
+}
+
+.fac--active::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  width: 4px;
+  height: 19px;
+  background-color: #111827;
+  border-radius: 31px;
+}
+
+.sidebar--collapsed .fac--active::after {
+  right: 3px;
 }

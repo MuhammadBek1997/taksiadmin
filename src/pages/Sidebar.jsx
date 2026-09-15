@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 import '../styles/Sidebar.css'
 import { ArrowLeft } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
+
 
 export default function Sidebar({ collapsed, setCollapsed }) {
-
-
     return (
         <div className={`sidebar ${collapsed ? "sidebar--collapsed" : ""}`}>
-
-
 
             <button className="toggle-icon" onClick={() => setCollapsed(!collapsed)}>
                 <ArrowLeft size={20} className={collapsed ? "icon-rotated" : ""} />
@@ -22,49 +20,73 @@ export default function Sidebar({ collapsed, setCollapsed }) {
                 <div className='h33'>
                     {!collapsed && <h3>Karavan</h3>}
                 </div>
-
-
             </div>
 
 
-
             <div className="facilities">
-                <div className="fac">
+                <NavLink
+                    to="/"  end
+                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
+                >
                     <img src="/dashboard.png" alt="" />
                     {!collapsed && <p>Dashboard</p>}
-                </div>
-                <div className="fac">
+                </NavLink>
+                <NavLink
+                    to="/map"
+                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
+                >
                     <img src="/map.png" alt="" />
                     {!collapsed && <p>Map</p>}
-                </div>
-                <div className="fac">
+                </NavLink>
+                <NavLink
+                    to="/drivers"
+                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
+                >
                     <img src="/drivers.png" alt="" />
                     {!collapsed && <p>Drivers</p>}
-                </div>
-                <div className="fac">
+                </NavLink>
+                <NavLink
+                    to="/couriers"
+                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
+                >
                     <img src="/couriers.png" alt="" />
                     {!collapsed && <p>Couriers</p>}
-                </div>
-                <div className="fac">
+                </NavLink>
+                <NavLink
+                    to="/orders"
+                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
+                >
                     <img src="/orders.png" alt="" />
                     {!collapsed && <p>Orders</p>}
-                </div>
-                <div className="fac">
+                </NavLink>
+                <NavLink
+                    to="/clients"
+                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
+                >
                     <img src="/clients.png" alt="" />
                     {!collapsed && <p>Clients</p>}
-                </div>
-                <div className="fac">
+                </NavLink>
+                <NavLink
+                    to="/reports"
+                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
+                >
                     <img src="/reports.png" alt="" />
                     {!collapsed && <p>Reports</p>}
-                </div>
-                <div className="fac">
+                </NavLink>
+                <NavLink
+                    to="/support"
+                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
+                >
                     <img src="/support.png" alt="" />
                     {!collapsed && <p>Support</p>}
-                </div>
-                <div className="fac">
+                </NavLink>
+                <NavLink
+                    to="/settings"
+                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
+                >
                     <img src="/settings.png" alt="" />
                     {!collapsed && <p>Settings</p>}
-                </div>
+                </NavLink>
             </div>
             {!collapsed && (
                 <div className="div-end">
