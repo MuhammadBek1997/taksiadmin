@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import '../styles/Sidebar.css'
-import { ArrowLeft } from 'lucide-react'
+import { MoveHorizontal } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
+import { Settings } from 'lucide-react';
 
 
 export default function Sidebar({ collapsed, setCollapsed }) {
@@ -9,7 +10,7 @@ export default function Sidebar({ collapsed, setCollapsed }) {
         <div className={`sidebar ${collapsed ? "sidebar--collapsed" : ""}`}>
 
             <button className="toggle-icon" onClick={() => setCollapsed(!collapsed)}>
-                <ArrowLeft size={20} className={collapsed ? "icon-rotated" : ""} />
+                <MoveHorizontal size={20} className={collapsed ? "icon-rotated" : ""} />
             </button>
 
 
