@@ -12,8 +12,6 @@ export default function Sidebar({ collapsed, setCollapsed }) {
             <button className="toggle-icon" onClick={() => setCollapsed(!collapsed)}>
                 <MoveHorizontal size={20} className={collapsed ? "icon-rotated" : ""} />
             </button>
-
-
             <div className="karvon-part">
                 <div className="black">
                     <img src="/K.png" alt="" />
@@ -22,8 +20,6 @@ export default function Sidebar({ collapsed, setCollapsed }) {
                     {!collapsed && <h3>Karavan</h3>}
                 </div>
             </div>
-
-
             <div className="facilities">
                 <NavLink
                     to="/"  end

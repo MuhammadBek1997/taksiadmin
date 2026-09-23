@@ -55,7 +55,6 @@
   margin: 0;
 }
 
-/* JADVAL */
 .clients-table {
   background-color: #ffffff;
   border-radius: 10px;
@@ -221,8 +220,6 @@
   font-weight: 650;
 }
 
-
-
 .div-con-all {
   display: flex;
   flex-direction: column;
@@ -280,7 +277,6 @@
   margin: 0;
 }
 
-/* JADVAL */
 .clients-table {
   background-color: #ffffff;
   border-radius: 10px;
@@ -332,7 +328,6 @@
   font-weight: 600;
 }
 
-/* AMALLAR ustuni */
 .col-actions {
   display: flex;
   gap: 8px;
@@ -434,8 +429,6 @@
 }
 
 @media (max-width: 768px) {
-
- 
   .div-search {
     display: flex;
     flex-direction: row;
@@ -490,7 +483,9 @@
     height: 13px;
   }
 
-  .faol, .kutilmoqda, .nofaol {
+  .faol,
+  .kutilmoqda,
+  .nofaol {
     width: auto;
     min-width: 56px;
     height: 24px;

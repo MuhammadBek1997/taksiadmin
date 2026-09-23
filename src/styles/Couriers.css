@@ -4,7 +4,6 @@
   gap: 20px;
 }
 
-/* Yuqori qator - qidiruv, saralash, yangi kuryer tugmasi */
 .couriers-div > .input-transport,
 .couriers-div > .saralash,
 .couriers-div > .new-kuryer {
@@ -76,7 +75,6 @@
   filter: brightness(0) invert(1);
 }
 
-/* JADVAL */
 .clients-table {
   grid-column: 1 / -1;
   background-color: #ffffff;
@@ -173,7 +171,6 @@
   background-color: #f3f4f6;
 }
 
-/* HOLAT BELGILARI */
 .faol {
   background-color: #f0fdf4;
   color: #15803d;

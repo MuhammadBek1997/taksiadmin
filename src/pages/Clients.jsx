@@ -14,20 +14,16 @@ const Clients = () => {
                         <h4>Saralash: Eng faol mijozlar</h4>
                         <img src="" alt="" />
                     </div>
-
                 </div>
-
                 <div className="clients-table">
-
                     <div className="table-row table-row--head">
-                        <p>Mijoz Ismi</p>   
+                        <p>Mijoz Ismi</p>
                         <p>Telefon Raqami</p>
                         <p>Ro'yxatdan o'tgan sana</p>
                         <p>Jami Buyurtmalar</p>
                         <p>Holati</p>
                         <p className="col-actions">Amallar</p>
                     </div>
-
                     <div className="table-row">
                         <p className="col-name"><span className="avatar-circle"></span>Jasur Shodiev</p>
                         <p>+998 90 987 65 43</p>
@@ -41,7 +37,6 @@ const Clients = () => {
                             <button className="icon-btn"> <img src="/trash.png" alt="" /></button>
                         </p>
                     </div>
-
                     <div className="table-row">
                         <p className="col-name"><span className="avatar-circle"></span>Malika Karimova</p>
                         <p>+998 91 123 45 67</p>
@@ -55,7 +50,6 @@ const Clients = () => {
                             <button className="icon-btn"> <img src="/trash.png" alt="" /></button>
                         </p>
                     </div>
-
                     <div className="table-row">
                         <p className="col-name"><span className="avatar-circle"></span>Bekzod Umarov</p>
                         <p>+998 93 456 78 90</p>
@@ -69,7 +63,6 @@ const Clients = () => {
                             <button className="icon-btn"> <img src="/trash.png" alt="" /></button>
                         </p>
                     </div>
-
                     <div className="table-row">
                         <p className="col-name"><span className="avatar-circle"></span>Elena Petrova</p>
                         <p>+998 90 333 22 11</p>
@@ -79,11 +72,10 @@ const Clients = () => {
                             Faol
                         </div>
                         <p className="col-actions">
-                           <button className="icon-btn"><img src="/pen.png" alt="" /></button>
+                            <button className="icon-btn"><img src="/pen.png" alt="" /></button>
                             <button className="icon-btn"> <img src="/trash.png" alt="" /></button>
                         </p>
                     </div>
-
                     <div className="table-row">
                         <p className="col-name"><span className="avatar-circle"></span>Otabek Yuldashev</p>
                         <p>+998 99 888 77 66</p>
@@ -97,9 +89,7 @@ const Clients = () => {
                             <button className="icon-btn"> <img src="/trash.png" alt="" /></button>
                         </p>
                     </div>
-
                 </div>
-
                 <div className="table-footer">
                     <p>Jami 1-5 dan 1,420 ta mijozdan ko'rsatilmoqda</p>
                     <div className="pagination">
@@ -110,12 +100,7 @@ const Clients = () => {
                         <button className="page-btn">Keyingi</button>
                     </div>
                 </div>
-
-
             </div>
-
-
-
         </>
     )
 }
