@@ -106,7 +106,6 @@
   font-weight: 600;
 }
 
-/* AMALLAR ustuni */
 .col-actions {
   display: flex;
   gap: 8px;
@@ -130,7 +129,6 @@
   background-color: #f3f4f6;
 }
 
-/* FOOTER + PAGINATION */
 .table-footer {
   display: flex;
   align-items: center;

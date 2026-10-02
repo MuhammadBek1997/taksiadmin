@@ -1,58 +1,60 @@
 import React from 'react'
 import '../styles/Settings.css'
+import { useTranslation } from 'react-i18next'
 
 const Settings = () => {
+    const { t } = useTranslation()
+
     return (
         <>
             <div className="overal-div">
                 <div className="All">
                     <div className="contact">
-                        <h3>Umumiy Sozlamalar</h3>
+                        <h3>{t('settings.general.title')}</h3>
 
                         <div className='input-cont'>
                             <div className='input1'>
-                                <p>Kompaniya nomi</p>
-                                <input type="text" placeholder='Karavan Logistics LLC' />
+                                <p>{t('settings.general.companyName')}</p>
+                                <input type="text" placeholder={t('settings.general.companyNamePlaceholder')} />
                             </div>
                             <div className='input1'>
-                                <p>Aloqa telefoni</p>
-                                <input type="text" placeholder='+998 71 200 00 20' />
+                                <p>{t('settings.general.phone')}</p>
+                                <input type="text" placeholder={t('settings.general.phonePlaceholder')} />
                             </div>
                         </div>
 
                         <div className="input-cont2">
                             <div className="input2">
-                                <p>Toshkent (GMT+5)</p>
-                                <input type="text" placeholder='Toshkent (GMT+5)' />
+                                <p>{t('settings.general.timezone')}</p>
+                                <input type="text" placeholder={t('settings.general.timezone')} />
                             </div>
-
                         </div>
 
                         <div className="div-for-button">
                             <button>
-                                Saqlash
+                                {t('settings.general.save')}
                             </button>
                         </div>
                     </div>
                 </div>
                 <div className="middle">
                     <div className="comition">
-                        <h3>Komissiya va Foizlar</h3>
+                        <h3>{t('settings.commission.title')}</h3>
 
                         <div className='input-cont'>
                             <div className='input1'>
-                                <p>Taksi komissiyasi (%)</p>
+                                <p>{t('settings.commission.taxi')}</p>
                                 <input type="text" placeholder='10.0' />
                             </div>
                             <div className='input1'>
-                                <p>Kuryerlik komissiyasi (%)</p>
+                                <p>{t('settings.commission.courier')}</p>
                                 <input type="text" placeholder='15.0' />
                             </div>
                         </div>
 
                         <div className="div-for-button2">
                             <button>
-                                Yangilash
+                                {t('settings.commission.update')}
                             </button>
                         </div>
                     </div>
@@ -60,10 +62,10 @@ const Settings = () => {
 
                 <div className="END">
                     <div className="left-part">
-                        <h3>Bildirishnomalar (SMS/Push)</h3>
+                        <h3>{t('settings.notifications.title')}</h3>
 
                         <div className="line">
-                            <p>Yangi buyurtma kelganda SMS yuborish</p>
+                            <p>{t('settings.notifications.newOrderSms')}</p>
                             <label className="switch">
                                 <input type="checkbox" defaultChecked />
                                 <span className="slider"></span>
@@ -71,7 +73,7 @@ const Settings = () => {
                         </div>
 
                         <div className="line">
-                            <p>Mijoz uchun push-xabarlar</p>
+                            <p>{t('settings.notifications.clientPush')}</p>
                             <label className="switch">
                                 <input type="checkbox" defaultChecked />
                                 <span className="slider"></span>
@@ -79,7 +81,7 @@ const Settings = () => {
                         </div>
 
                         <div className="line">
-                            <p>Haftalik hisobotlarni elektron pochtaga yuborish</p>
+                            <p>{t('settings.notifications.weeklyEmail')}</p>
                             <label className="switch">
                                 <input type="checkbox" />
                                 <span className="slider"></span>
@@ -88,17 +90,17 @@ const Settings = () => {
                     </div>
 
                     <div className="right-part">
-                        <h3>Xavfsizlik Sozlamalari</h3>
+                        <h3>{t('settings.security.title')}</h3>
                         <div className="input1">
-                            <p>Joriy parol</p>
+                            <p>{t('settings.security.currentPassword')}</p>
                             <input type="password" />
                         </div>
                         <div className="input1">
-                            <p>Yangi parol</p>
-                            <input type="password" placeholder="Yangi parolni kiriting" />
+                            <p>{t('settings.security.newPassword')}</p>
+                            <input type="password" placeholder={t('settings.security.newPasswordPlaceholder')} />
                         </div>
                         <div className="line">
-                            <p>Ikki bosqichli autentifikatsiya (2FA)</p>
+                            <p>{t('settings.security.twoFA')}</p>
                             <label className="switch">
                                 <input type="checkbox" defaultChecked />
                                 <span className="slider"></span>
@@ -107,10 +109,6 @@ const Settings = () => {
                     </div>
                 </div>
             </div>
-
-
-
-
         </>
     )
 }

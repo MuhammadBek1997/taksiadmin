@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../styles/Sidebar.css'
 import { MoveHorizontal } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
-import { Settings } from 'lucide-react';
-
+import { useTranslation } from 'react-i18next'
 
 export default function Sidebar({ collapsed, setCollapsed }) {
+    const { t } = useTranslation()
+
     return (
         <div className={`sidebar ${collapsed ? "sidebar--collapsed" : ""}`}>
 
@@ -17,78 +18,78 @@ export default function Sidebar({ collapsed, setCollapsed }) {
                     <img src="/K.png" alt="" />
                 </div>
                 <div className='h33'>
-                    {!collapsed && <h3>Karavan</h3>}
+                    {!collapsed && <h3>{t('sidebar.companyName')}</h3>}
                 </div>
             </div>
             <div className="facilities">
                 <NavLink
-                    to="/"  end
+                    to="/" end
                     className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
                 >
                     <img src="/dashboard.png" alt="" />
-                    {!collapsed && <p>Dashboard</p>}
+                    {!collapsed && <p>{t('sidebar.dashboard')}</p>}
                 </NavLink>
                 <NavLink
                     to="/map"
                     className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
                 >
                     <img src="/map.png" alt="" />
-                    {!collapsed && <p>Map</p>}
+                    {!collapsed && <p>{t('sidebar.map')}</p>}
                 </NavLink>
                 <NavLink
                     to="/drivers"
                     className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
                 >
                     <img src="/drivers.png" alt="" />
-                    {!collapsed && <p>Drivers</p>}
+                    {!collapsed && <p>{t('sidebar.drivers')}</p>}
                 </NavLink>
                 <NavLink
                     to="/couriers"
                     className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
                 >
                     <img src="/couriers.png" alt="" />
-                    {!collapsed && <p>Couriers</p>}
+                    {!collapsed && <p>{t('sidebar.couriers')}</p>}
                 </NavLink>
                 <NavLink
                     to="/orders"
                     className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
                 >
                     <img src="/orders.png" alt="" />
-                    {!collapsed && <p>Orders</p>}
+                    {!collapsed && <p>{t('sidebar.orders')}</p>}
                 </NavLink>
                 <NavLink
                     to="/clients"
                     className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
                 >
                     <img src="/clients.png" alt="" />
-                    {!collapsed && <p>Clients</p>}
+                    {!collapsed && <p>{t('sidebar.clients')}</p>}
                 </NavLink>
                 <NavLink
                     to="/reports"
                     className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
                 >
                     <img src="/reports.png" alt="" />
-                    {!collapsed && <p>Reports</p>}
+                    {!collapsed && <p>{t('sidebar.reports')}</p>}
                 </NavLink>
                 <NavLink
                     to="/support"
                     className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
                 >
                     <img src="/support.png" alt="" />
-                    {!collapsed && <p>Support</p>}
+                    {!collapsed && <p>{t('sidebar.support')}</p>}
                 </NavLink>
                 <NavLink
                     to="/settings"
                     className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
                 >
                     <img src="/settings.png" alt="" />
-                    {!collapsed && <p>Settings</p>}
+                    {!collapsed && <p>{t('sidebar.settings')}</p>}
                 </NavLink>
             </div>
             {!collapsed && (
                 <div className="div-end">
-                    <p>v2.4.0 (Monochrome)</p>
-                    <p>Toshkent, UZ</p>
+                    <p>{t('sidebar.version')}</p>
+                    <p>{t('sidebar.location')}</p>
                 </div>
             )}
         </div>

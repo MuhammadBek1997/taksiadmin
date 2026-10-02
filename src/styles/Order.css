@@ -1,0 +1,287 @@
+
+.ord-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.ord-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.ord-search {
+  position: relative;
+  flex: 0 1 320px;
+  min-width: 180px;
+  height: 36px;
+}
+
+.ord-search input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 12px 0 36px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #171717;
+}
+
+.ord-search input::placeholder {
+  color: #9ca3af;
+}
+
+.ord-search input:focus {
+  border-color: #d1d5db;
+}
+
+.ord-search__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.ord-filters {
+  display: flex;
+  gap: 10px;
+  margin-left: 12px;
+}
+
+.ord-filter {
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0 14px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #171717;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ord-filter:hover:not(.ord-filter--active) {
+  background: #f5f5f5;
+}
+
+.ord-filter--active {
+  background: #171717;
+  border-color: #171717;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.ord-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 132px;
+  height: 36px;
+  box-sizing: border-box;
+  padding: 0 17px 0 13px;
+  margin-left: auto;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #171717;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.ord-date img {
+  width: 12px;
+  height: 12px;
+}
+
+/* ---------- JADVAL ---------- */
+.ord-table {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ord-row {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 109fr) minmax(0, 159fr) minmax(0, 199fr) minmax(0, 177fr)
+    minmax(0, 119fr) minmax(0, 130fr) minmax(0, 97fr) minmax(0, 88fr);
+  align-items: center;
+  height: 59px;
+  box-sizing: border-box;
+  padding: 0 24px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 14px;
+  color: #171717;
+}
+
+.ord-row:last-child {
+  border-bottom: none;
+}
+
+.ord-row > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ord-row--head {
+  height: 42px;
+  background: #fafafa;
+  font-size: 13px;
+  font-weight: 600;
+  color: #525252;
+}
+
+.ord-id {
+  font-weight: 700;
+}
+
+.ord-client {
+  font-weight: 600;
+}
+
+.ord-muted {
+  color: #737373;
+}
+
+.ord-price {
+  font-weight: 700;
+}
+
+.ord-right {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.ord-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 22px;
+  box-sizing: border-box;
+  padding: 0 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.ord-status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ord-status--done {
+  background: #f0fdf4;
+  color: #15803d;
+}
+.ord-status--done::before {
+  background: #22c55e;
+}
+
+.ord-status--progress {
+  background: #fef3c7;
+  color: #b45309;
+}
+.ord-status--progress::before {
+  background: #f59e0b;
+}
+
+.ord-status--new {
+  background: #eff6ff;
+  color: #2563eb;
+}
+.ord-status--new::before {
+  background: #3b82f6;
+}
+
+.ord-status--cancel {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+.ord-status--cancel::before {
+  background: #ef4444;
+}
+
+.ord-detail {
+  height: 26px;
+  box-sizing: border-box;
+  padding: 0 12px;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #171717;
+  cursor: pointer;
+}
+
+.ord-detail:hover {
+  background: #f0f0f0;
+}
+
+/* ---------- FOOTER + SAHIFALASH ---------- */
+.ord-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ord-footer p {
+  font-size: 13px;
+  color: #737373;
+}
+
+.ord-pagination {
+  display: flex;
+  gap: 6px;
+}
+
+.ord-page-btn {
+  height: 32px;
+  min-width: 34px;
+  box-sizing: border-box;
+  padding: 0 11px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #171717;
+  cursor: pointer;
+}
+
+.ord-page-btn:hover:not(.ord-page-btn--active) {
+  background: #f5f5f5;
+}
+
+.ord-page-btn--active {
+  background: #171717;
+  border-color: #171717;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.ord-row--link {
+  cursor: pointer;
+}

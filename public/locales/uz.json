@@ -1,0 +1,63 @@
+{
+  "sidebar": {
+    "companyName": "Karavan",
+    "dashboard": "Панель управления",
+    "map": "Карта",
+    "drivers": "Водители",
+    "couriers": "Курьеры",
+    "orders": "Заказы",
+    "clients": "Клиенты",
+    "reports": "Отчёты",
+    "support": "Поддержка",
+    "settings": "Настройки",
+    "version": "v2.4.0 (Monochrome)",
+    "location": "Ташкент, UZ"
+},
+  "navbar": {
+    "titles": {
+      "dashboard": "Панель управления",
+      "map": "Карта",
+      "drivers": "Водители",
+      "couriers": "Курьеры",
+      "orders": "Заказы",
+      "clients": "Клиенты",
+      "reports": "Отчёты",
+      "support": "Поддержка",
+      "settings": "Настройки системы",
+      "courierProfile": "Kuryer Profili",
+      "default": "Страница"
+    },
+    "searchPlaceholder": "Поиск...",
+    "role": "Администратор"
+  },
+  "settings": {
+    "general": {
+      "title": "Общие настройки",
+      "companyName": "Название компании",
+      "companyNamePlaceholder": "Karavan Logistics LLC",
+      "phone": "Контактный телефон",
+      "phonePlaceholder": "+998 71 200 00 20",
+      "timezone": "Ташкент (GMT+5)",
+      "save": "Сохранить"
+    },
+    "commission": {
+      "title": "Комиссия и проценты",
+      "taxi": "Комиссия такси (%)",
+      "courier": "Комиссия курьера (%)",
+      "update": "Обновить"
+    },
+    "notifications": {
+      "title": "Уведомления (SMS/Push)",
+      "newOrderSms": "Отправлять SMS при новом заказе",
+      "clientPush": "Push-уведомления для клиента",
+      "weeklyEmail": "Отправлять еженедельные отчёты на почту"
+    },
+    "security": {
+      "title": "Настройки безопасности",
+      "currentPassword": "Текущий пароль",
+      "newPassword": "Новый пароль",
+      "newPasswordPlaceholder": "Введите новый пароль",
+      "twoFA": "Двухфакторная аутентификация (2FA)"
+    }
+  }
+}

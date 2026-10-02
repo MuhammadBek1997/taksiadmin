@@ -1,0 +1,63 @@
+{
+  "sidebar": {
+    "companyName": "Karavan",
+    "dashboard": "Dashboard",
+    "map": "Map",
+    "drivers": "Drivers",
+    "couriers": "Couriers",
+    "orders": "Orders",
+    "clients": "Clients",
+    "reports": "Reports",
+    "support": "Support",
+    "settings": "Settings",
+    "version": "v2.4.0 (Monochrome)",
+    "location": "Tashkent, UZ"
+  },
+  "navbar": {
+    "titles": {
+      "dashboard": "Dashboard",
+      "map": "Map",
+      "drivers": "Drivers",
+      "couriers": "Couriers",
+      "orders": "Orders",
+      "clients": "Clients",
+      "reports": "Reports",
+      "support": "Support",
+      "settings": "System Settings",
+      "courierProfile": "Courier Profile",
+      "default": "Page"
+    },
+    "searchPlaceholder": "Search...",
+    "role": "Administrator"
+  },
+  "settings": {
+    "general": {
+      "title": "General Settings",
+      "companyName": "Company Name",
+      "companyNamePlaceholder": "Karavan Logistics LLC",
+      "phone": "Contact Phone",
+      "phonePlaceholder": "+998 71 200 00 20",
+      "timezone": "Tashkent (GMT+5)",
+      "save": "Save"
+    },
+    "commission": {
+      "title": "Commission & Rates",
+      "taxi": "Taxi commission (%)",
+      "courier": "Courier commission (%)",
+      "update": "Update"
+    },
+    "notifications": {
+      "title": "Notifications (SMS/Push)",
+      "newOrderSms": "Send SMS on new order",
+      "clientPush": "Push notifications for client",
+      "weeklyEmail": "Send weekly reports via email"
+    },
+    "security": {
+      "title": "Security Settings",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "newPasswordPlaceholder": "Enter new password",
+      "twoFA": "Two-Factor Authentication (2FA)"
+    }
+  }
+}

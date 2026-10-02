@@ -1,7 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../styles/Couriers.css'
 
 const Couriers = () => {
+    const navigate = useNavigate()
+
     return (
         <div className="couriers-div">
             <input type="text" placeholder="Ism yoki transport raqami bo'yicha..." className="input-transport" />
@@ -10,11 +13,14 @@ const Couriers = () => {
                 Saralash: Transport
                 <img src="/arrow.png" alt="" />
             </div>
+
             <div className="new-kuryer">
                 <img src="/plus.png" alt="" />
                 Yangi kuryer
             </div>
+
             <div className="clients-table">
+
                 <div className="table-row table-row--head">
                     <p>Kuryer Ismi</p>
                     <p>Telefon raqami</p>
@@ -23,7 +29,8 @@ const Couriers = () => {
                     <p>Reyting</p>
                     <p className="col-actions">Amallar</p>
                 </div>
-                <div className="table-row">
+
+                <div className="table-row table-row--link" onClick={() => navigate('/couriers/CR-1201')}>
                     <p className="col-name"><span className="avatar-circle"></span>Jasur Shokirov</p>
                     <p>+998 90 321 44 55</p>
                     <p className="col-transport">
@@ -40,7 +47,8 @@ const Couriers = () => {
                         <button className="icon-btn"><img src="/trash.png" alt="" /></button>
                     </p>
                 </div>
-                <div className="table-row">
+
+                <div className="table-row table-row--link" onClick={() => navigate('/couriers/CR-1204')}>
                     <p className="col-name"><span className="avatar-circle"></span>Olim Qodirov</p>
                     <p>+998 99 110 50 60</p>
                     <p className="col-transport">
@@ -57,7 +65,8 @@ const Couriers = () => {
                         <button className="icon-btn"><img src="/trash.png" alt="" /></button>
                     </p>
                 </div>
-                <div className="table-row">
+
+                <div className="table-row table-row--link" onClick={() => navigate('/couriers/CR-1207')}>
                     <p className="col-name"><span className="avatar-circle"></span>Fayzulla Karimov</p>
                     <p>+998 97 450 11 22</p>
                     <p className="col-transport">
@@ -74,7 +83,8 @@ const Couriers = () => {
                         <button className="icon-btn"><img src="/trash.png" alt="" /></button>
                     </p>
                 </div>
-                <div className="table-row">
+
+                <div className="table-row table-row--link" onClick={() => navigate('/couriers/CR-1211')}>
                     <p className="col-name"><span className="avatar-circle"></span>Diyor Ismoilov</p>
                     <p>+998 93 540 88 99</p>
                     <p className="col-transport">
@@ -91,7 +101,8 @@ const Couriers = () => {
                         <button className="icon-btn"><img src="/trash.png" alt="" /></button>
                     </p>
                 </div>
-                <div className="table-row">
+
+                <div className="table-row table-row--link" onClick={() => navigate('/couriers/CR-1215')}>
                     <p className="col-name"><span className="avatar-circle"></span>Sherzod Tojiev</p>
                     <p>+998 90 990 00 11</p>
                     <p className="col-transport">
@@ -108,7 +119,9 @@ const Couriers = () => {
                         <button className="icon-btn"><img src="/trash.png" alt="" /></button>
                     </p>
                 </div>
+
             </div>
+
             <div className="table-footer">
                 <p>Jami 1-5 dan 84 ta kuryerdan ko'rsatilmoqda</p>
                 <div className="pagination">

@@ -12,6 +12,8 @@ import Order from './pages/Order'
 import Clients from './pages/Clients'
 import Reports from './pages/Reports'
 import Support from './pages/Support'
+import OrderDetails from './pages/OrderDetails'
+import CourierProfile from './pages/CourierProfile'
 
 function App() {
   const [collapsed, setCollapsed] = useState(false)
@@ -32,6 +34,8 @@ function App() {
             <Route path="/clients" element={<Clients />} />
             <Route path="/reports" element={<Reports />} />
             <Route path="/support" element={<Support />} />
+            <Route path="/orders/:id" element={<OrderDetails />} />
+            <Route path="/couriers/:id" element={<CourierProfile />} />
           </Routes>
         </div>
       </div>

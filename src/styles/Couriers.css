@@ -1,24 +1,14 @@
 .couriers-div {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-template-rows: auto auto;
+  gap: 12px;
 }
 
 .couriers-div > .input-transport,
 .couriers-div > .saralash,
 .couriers-div > .new-kuryer {
   grid-row: 1;
-}
-
-.input-transport {
-  width: 32%;
-}
-
-.couriers-div {
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  grid-template-rows: auto auto;
-  gap: 12px;
 }
 
 .input-transport {
@@ -95,6 +85,10 @@
   border-bottom: none;
 }
 
+.table-row--link {
+  cursor: pointer;
+}
+
 .table-row--head {
   background-color: #fafafa;
   font-size: 13px;
@@ -147,7 +141,6 @@
   height: 14px;
 }
 
-/* AMALLAR ustuni */
 .col-actions {
   display: flex;
   gap: 8px;
@@ -171,9 +164,9 @@
   background-color: #f3f4f6;
 }
 
-.faol {
-  background-color: #f0fdf4;
-  color: #15803d;
+.faol,
+.waiting,
+.nofaol {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,6 +179,10 @@
   font-weight: 550;
 }
 
+.faol {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
 .faol::before {
   content: "";
   width: 6px;
@@ -197,18 +194,7 @@
 .waiting {
   background-color: #fef3c7;
   color: #b45309;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  height: 34px;
-  width: 100px;
-  padding: 0 12px;
-  border-radius: 12px;
-  font-size: 13px;
-  font-weight: 550;
 }
-
 .waiting::before {
   content: "";
   width: 6px;
@@ -220,18 +206,7 @@
 .nofaol {
   background-color: #fef2f2;
   color: #b91c1c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  height: 34px;
-  width: 100px;
-  padding: 0 12px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 550;
 }
-
 .nofaol::before {
   content: "";
   width: 6px;
