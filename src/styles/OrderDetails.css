@@ -1,4 +1,4 @@
-
+/* App.css dagi .app-content padding 24px + 8px = 32px (dizayndagi chekka) */
 .od-page {
   display: grid;
   grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
@@ -23,7 +23,7 @@
   box-sizing: border-box;
 }
 
-
+/* ---------- CHAP: BUYURTMA TARKIBI ---------- */
 .od-card__head {
   display: flex;
   align-items: center;
@@ -47,8 +47,6 @@
   box-sizing: border-box;
   padding: 0 8px;
   border-radius: 6px;
-  background: #fef3c7;
-  color: #b45309;
   font-size: 12px;
   font-weight: 600;
   line-height: 1;
@@ -59,7 +57,38 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
+}
+
+.od-status--done {
+  background: #f0fdf4;
+  color: #15803d;
+}
+.od-status--done::before {
+  background: #22c55e;
+}
+
+.od-status--progress {
+  background: #fef3c7;
+  color: #b45309;
+}
+.od-status--progress::before {
   background: #f59e0b;
+}
+
+.od-status--new {
+  background: #eff6ff;
+  color: #2563eb;
+}
+.od-status--new::before {
+  background: #3b82f6;
+}
+
+.od-status--cancel {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+.od-status--cancel::before {
+  background: #ef4444;
 }
 
 .od-item {
@@ -115,6 +144,7 @@
   background: #e5e5e5;
 }
 
+/* ---------- O'NG: MIJOZ VA KURYER ---------- */
 .od-block-title {
   margin-bottom: 16px;
   font-size: 14px;
@@ -145,8 +175,16 @@
   color: #171717;
 }
 
+.od-field__value--ok {
+  color: #15803d;
+}
+
 .od-field__value--warn {
   color: #b45309;
+}
+
+.od-field__value--cancel {
+  color: #b91c1c;
 }
 
 .od-courier {
