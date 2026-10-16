@@ -1,0 +1,210 @@
+{
+  "sidebar": {
+    "companyName": "ddd",
+    "adminPanel": "Админ-панель",
+    "dashboard": "Панель управления",
+    "map": "Карта",
+    "drivers": "Водители",
+    "couriers": "Курьеры",
+    "stores": "Магазины",
+    "orders": "Заказы",
+    "clients": "Клиенты",
+    "reports": "Отчёты",
+    "support": "Поддержка",
+    "settings": "Настройки",
+    "new": "Новое!",
+    "version": "v2.5.0",
+    "location": "Ташкент, UZ",
+    "open": "Открыть",
+    "close": "Закрыть"
+  },
+  "navbar": {
+    "titles": {
+      "dashboard": "Панель управления",
+      "map": "Карта",
+      "drivers": "Водители",
+      "couriers": "Курьеры",
+      "stores": "Магазины",
+      "orders": "Заказы",
+      "clients": "Клиенты",
+      "reports": "Отчёты",
+      "support": "Поддержка",
+      "settings": "Настройки",
+      "driverProfile": "Профиль водителя",
+      "default": "Страница",
+      "driverApproval": "Подтверждение водителей"
+    },
+    "searchPlaceholder": "Поиск...",
+    "role": "Администратор"
+  },
+  "dashboard": {
+    "unitCount": "{{value}}",
+    "unitMln": "{{value}} млн UZS",
+    "vsYesterday": "по сравнению со вчера",
+    "vsLastWeek": "по сравнению с прошлой неделей",
+    "vsTarget": "относительно цели",
+    "stats": {
+      "activeDrivers": "Активные водители",
+      "activeCouriers": "Активные курьеры",
+      "totalOrders": "Всего заказов сегодня",
+      "dailyRevenue": "Дневная выручка"
+    },
+    "chart": {
+      "title": "Динамика выручки (Неделя)",
+      "subtitle": "Общий доход и объём заказов",
+      "thisWeek": "Эта неделя",
+      "lastWeek": "Прошлая неделя",
+      "week": "Неделя",
+      "month": "Месяц",
+      "year": "Год"
+    },
+    "days": {
+      "mon": "Пн",
+      "tue": "Вт",
+      "wed": "Ср",
+      "thu": "Чт",
+      "fri": "Пт",
+      "sat": "Сб",
+      "sun": "Вс"
+    },
+    "recent": {
+      "title": "Последние действия",
+      "viewAll": "Смотреть все →",
+      "time": "Время",
+      "type": "Тип",
+      "description": "Описание",
+      "status": "Статус"
+    },
+    "types": {
+      "taxi": "Такси",
+      "courier": "Курьер"
+    },
+    "statuses": {
+      "completed": "Выполнен",
+      "inProgress": "В процессе",
+      "cancelled": "Отменён"
+    }
+  },
+  "drivers": {
+    "searchPlaceholder": "Поиск по имени или номеру транспорта...",
+    "filters": {
+      "all": "Все",
+      "online": "Онлайн",
+      "offline": "Офлайн"
+    },
+    "sortLabel": "Сортировка: {{value}}",
+    "sortRating": "Рейтинг",
+    "addDriver": "Новый водитель",
+    "columns": {
+      "name": "Имя Фамилия",
+      "phone": "Номер телефона",
+      "car": "Модель авто и госномер",
+      "status": "Статус",
+      "rating": "Рейтинг",
+      "actions": "Действия"
+    },
+    "statuses": {
+      "online": "Онлайн",
+      "busy": "Занят",
+      "offline": "Офлайн"
+    },
+    "view": "Просмотр",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "showing": "Показано {{from}}–{{to}} из {{total}} водителей",
+    "prev": "Назад",
+    "next": "Далее"
+  },
+  "driverDetail": {
+    "id": "ID: {{id}}",
+    "phone": "Номер телефона",
+    "email": "Электронная почта",
+    "car": "Модель авто & номер",
+    "edit": "Редактировать",
+    "block": "Заблокировать",
+    "stats": {
+      "totalOrders": "Всего заказов",
+      "totalIncome": "Общий доход",
+      "avgRating": "Средний рейтинг"
+    },
+    "documents": {
+      "title": "Документы и разрешения",
+      "license": "Водительское удостоверение",
+      "passport": "Копия паспорта (ID)",
+      "uploaded": "Загружено: {{date}}",
+      "download": "Скачать"
+    },
+    "trips": {
+      "title": "История последних поездок",
+      "date": "Дата/Время",
+      "from": "Адрес отправления",
+      "to": "Адрес назначения",
+      "price": "Цена",
+      "status": "Статус",
+      "today": "Сегодня",
+      "yesterday": "Вчера"
+    }
+  },
+  "support": {
+    "title": "Обращения",
+    "tabs": {
+      "open": "Открытые",
+      "inProgress": "В работе",
+      "closed": "Закрытые"
+    },
+    "searchPlaceholder": "Имя, ID или тема...",
+    "tags": {
+      "driver": "Водитель",
+      "courier": "Курьер",
+      "client": "Клиент",
+      "store": "Магазин"
+    },
+    "today": "Сегодня",
+    "ticket": "Обращение",
+    "close": "Закрыть",
+    "profile": "Профиль",
+    "call": "Позвонить",
+    "block": "Заблокировать",
+    "typing": "{{name}} печатает...",
+    "paymentSent": "Платёж {{id}} отправлен в финансовый отдел",
+    "quick": {
+      "checking": "Проверяется ⏳",
+      "until": "Сегодня до 18:00",
+      "resolved": "Спасибо, решено ✅"
+    },
+    "messagePlaceholder": "Напишите сообщение...",
+    "info": {
+      "title": "Обращение",
+      "id": "ID",
+      "subject": "Тема",
+      "opened": "Открыто",
+      "assignee": "Ответственный",
+      "priority": "Приоритет",
+      "high": "Высокий",
+      "relatedTrip": "Связанная поездка"
+    }
+  },
+  "addDriver": {
+    "title": "Ожидающие заявки",
+    "filterAll": "Все ({{value}})",
+    "columns": {
+      "name": "Имя Фамилия",
+      "phone": "Телефон",
+      "documents": "Документы",
+      "actions": "Действия"
+    },
+    "docs": "{{value}} док.",
+    "reject": "Отклонить",
+    "approve": "Подтвердить",
+    "today": "Сегодня",
+    "yesterday": "Вчера",
+    "panel": {
+      "title": "Анализ документов",
+      "license": "Водительское удостоверение (категория AB)",
+      "clickToView": "Нажмите для просмотра",
+      "licenseNote": "Подлинное: срок действия до 2030 года",
+      "passport": "Паспорт / ID-карта",
+      "passportNote": "Проверено: 01-1049283-92 предоставлен"
+    }
+  }
+}

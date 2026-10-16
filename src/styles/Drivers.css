@@ -1,0 +1,379 @@
+.drivers {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 24px;
+  background: #f2f2ee;
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ---------- Yuqori panel ---------- */
+.drv-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.drv-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.drv-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 360px;
+  height: 42px;
+  padding: 0 14px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.drv-search img {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.drv-search input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #111;
+  font-size: 14px;
+}
+
+.drv-search input::placeholder {
+  color: #a3a39e;
+}
+
+/* Barchasi / Online / Offline */
+.drv-filter {
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.drv-filter button {
+  height: 34px;
+  padding: 0 14px;
+  background: transparent;
+  border: none;
+  border-radius: 9px;
+  color: #444;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.drv-filter button em {
+  margin-left: 4px;
+  color: #a3a39e;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.drv-filter button.active {
+  background: #121212;
+  color: #fff;
+}
+
+.drv-filter button.active em {
+  color: #ffd21f;
+}
+
+.drv-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 42px;
+  padding: 0 16px;
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  color: #111;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.drv-sort img {
+  width: 14px;
+  height: 14px;
+}
+
+.drv-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 18px;
+  background: #ffd21f;
+  border: none;
+  border-radius: 12px;
+  color: #111;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.drv-add:hover {
+  background: #f5c800;
+}
+
+.drv-add img {
+  width: 16px;
+  height: 16px;
+}
+
+/* ---------- Jadval ---------- */
+.drv-card {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.drv-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 14px;
+}
+
+.drv-table th:nth-child(1) { width: 24%; }
+.drv-table th:nth-child(2) { width: 16%; }
+.drv-table th:nth-child(3) { width: 26%; }
+.drv-table th:nth-child(4) { width: 12%; }
+.drv-table th:nth-child(5) { width: 9%; }
+
+.drv-table th {
+  padding: 14px 20px;
+  background: #f8f8f5;
+  color: #8a8a85;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.drv-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #f0f0ec;
+  white-space: nowrap;
+}
+
+.drv-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.drv-table .muted {
+  color: #6b6b6b;
+}
+
+.drv-row {
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.drv-row:hover {
+  background: #fafaf8;
+}
+
+/* Haydovchi */
+.drv-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.drv-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #111;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.drv-avatar--yellow { background: #fff1c2; }
+.drv-avatar--blue { background: #dbe8ff; }
+.drv-avatar--green { background: #d9f5e3; }
+.drv-avatar--purple { background: #e8e4ff; }
+
+.drv-user-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.drv-user-text b {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.drv-user-text span {
+  color: #a3a39e;
+  font-size: 12px;
+}
+
+/* Mashina va davlat raqami */
+.drv-car {
+  margin-right: 10px;
+  color: #444;
+}
+
+.drv-plate {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px;
+  border: 1.5px solid #111;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+
+.drv-plate b {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.drv-plate i {
+  width: 1.5px;
+  height: 12px;
+  background: #111;
+}
+
+/* Holat */
+.drv-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.drv-badge i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.drv-badge--online { background: #dcfce7; color: #16a34a; }
+.drv-badge--busy { background: #fef3c7; color: #b45309; }
+.drv-badge--offline { background: #eeeeea; color: #6b6b6b; }
+
+/* Reyting */
+.drv-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+}
+
+.drv-rating img {
+  width: 14px;
+  height: 14px;
+}
+
+/* Amallar */
+.drv-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.drv-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  background: #f2f2ee;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.drv-icon-btn:hover {
+  background: #e8e8e3;
+}
+
+.drv-icon-btn img {
+  width: 14px;
+  height: 14px;
+}
+
+.drv-icon-btn--danger {
+  background: #fee2e2;
+}
+
+.drv-icon-btn--danger:hover {
+  background: #fdcfcf;
+}
+
+/* ---------- Pastki panel ---------- */
+.drv-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.drv-info {
+  color: #8a8a85;
+  font-size: 13px;
+}
+
+.drv-pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.drv-pagination button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 14px;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  color: #111;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.drv-pagination button:hover {
+  background: #f8f8f5;
+}
+
+.drv-pagination button.active {
+  background: #121212;
+  color: #fff;
+}
+
+.drv-page-nav img {
+  width: 14px;
+  height: 14px;
+}

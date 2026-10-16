@@ -1,0 +1,338 @@
+.add-driver {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 24px;
+  background: #f2f2ee;
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ---------- Sarlavha ---------- */
+.ad-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ad-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ad-count {
+  padding: 2px 10px;
+  background: #ffd21f;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ad-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 42px;
+  padding: 0 18px;
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  color: #111;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ad-filter img {
+  width: 14px;
+  height: 14px;
+}
+
+/* ---------- Asosiy qism ---------- */
+.ad-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 460px;
+  gap: 24px;
+  align-items: start;
+}
+
+.ad-card {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 16px;
+}
+
+/* ---------- Jadval ---------- */
+.ad-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 14px;
+}
+
+.ad-table th:nth-child(1) { width: 32%; }
+.ad-table th:nth-child(2) { width: 22%; }
+.ad-table th:nth-child(3) { width: 20%; }
+
+.ad-table th {
+  padding: 14px 20px;
+  background: #f8f8f5;
+  color: #8a8a85;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.ad-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #f0f0ec;
+  white-space: nowrap;
+}
+
+.ad-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.ad-table tbody tr {
+  cursor: pointer;
+}
+
+.ad-table tbody tr:hover {
+  background: #fafaf8;
+}
+
+.ad-table tbody tr.selected {
+  background: #fffbe6;
+}
+
+.ad-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ad-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #111;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ad-avatar--yellow { background: #fff1c2; }
+.ad-avatar--blue { background: #dbe8ff; }
+.ad-avatar--green { background: #d9f5e3; }
+
+.ad-user-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ad-user-text b {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ad-user-text span {
+  color: #a3a39e;
+  font-size: 12px;
+}
+
+/* Hujjatlar soni */
+.ad-docs {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ad-docs i {
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+  border-radius: 50%;
+}
+
+.ad-docs--blue { background: #dbe8ff; color: #2563eb; }
+.ad-docs--amber { background: #fef3c7; color: #b45309; }
+
+/* Amallar */
+.ad-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.ad-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ad-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.ad-btn--reject {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.ad-btn--reject:hover {
+  background: #fdcfcf;
+}
+
+.ad-btn--approve {
+  background: #ffd21f;
+  color: #111;
+}
+
+.ad-btn--approve:hover {
+  background: #f5c800;
+}
+
+/* ---------- O'ng panel ---------- */
+.ad-panel {
+  padding: 24px;
+}
+
+.ad-panel-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ad-panel-sub {
+  margin: 4px 0 20px;
+  color: #8a8a85;
+  font-size: 13px;
+}
+
+.ad-doc {
+  margin-bottom: 20px;
+}
+
+.ad-doc-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ad-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 150px;
+  background: #f2f2ee;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.ad-preview img {
+  width: 24px;
+  height: 24px;
+}
+
+.ad-preview span {
+  color: #a3a39e;
+  font-size: 12px;
+}
+
+.ad-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #dcfce7;
+  border-radius: 8px;
+  color: #16a34a;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ad-note img {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.ad-panel-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.ad-btn-lg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ad-btn-lg img {
+  width: 18px;
+  height: 18px;
+}
+
+.ad-btn-lg--reject {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.ad-btn-lg--reject:hover {
+  background: #fdcfcf;
+}
+
+.ad-btn-lg--approve {
+  background: #ffd21f;
+  color: #111;
+}
+
+.ad-btn-lg--approve:hover {
+  background: #f5c800;
+}
+
+@media (max-width: 1280px) {
+  .ad-grid {
+    grid-template-columns: 1fr;
+  }
+}

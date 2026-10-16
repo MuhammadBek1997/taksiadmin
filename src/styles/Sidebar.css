@@ -1,0 +1,192 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 240px;
+  height: 100vh;
+  background: #121212;
+  color: #d4d4cf;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+  transition: width 0.2s ease;
+}
+
+.sidebar.collapsed {
+  width: 76px;
+}
+
+/* ---------- Yuqori qism: logo ---------- */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 24px 16px 20px;
+}
+
+.sidebar.collapsed .sidebar-header {
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: #ffd21f;
+  border-radius: 12px;
+  color: #111;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.logo-name {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.logo-sub {
+  color: #8a8a85;
+  font-size: 12px;
+}
+
+/* Yopish/ochish tugmasi */
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid #2a2a28;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background: #1e1e1c;
+}
+
+.toggle-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+}
+
+.sidebar.collapsed .toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* ---------- Menyu ---------- */
+.sidebar-nav {
+  flex: 1;
+  padding: 0 16px;
+  overflow-y: auto;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 38px;
+  padding: 0 12px;
+  border-radius: 10px;
+  color: #d4d4cf;
+  font-size: 14px;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: background 0.15s ease;
+}
+
+.sidebar.collapsed .menu-item {
+  justify-content: center;
+  padding: 0;
+}
+
+.menu-item:hover {
+  background: #1e1e1c;
+}
+
+.menu-item.active {
+  background: #ffd21f;
+  color: #111;
+  font-weight: 500;
+}
+
+.menu-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Tanlangan bandning ikonkasi qora bo'ladi */
+.menu-item.active .menu-icon {
+  filter: brightness(0);
+}
+
+.menu-label {
+  flex: 1;
+  white-space: nowrap;
+}
+
+/* "Yangi!" belgisi */
+.menu-badge {
+  padding: 2px 8px;
+  background: #ffd21f;
+  border-radius: 999px;
+  color: #111;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ---------- Pastki karta ---------- */
+.sidebar-footer {
+  margin: 16px;
+  padding: 12px 14px;
+  background: #1e1e1c;
+  border-radius: 12px;
+}
+
+.version {
+  margin: 0 0 2px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.location {
+  margin: 0;
+  color: #8a8a85;
+  font-size: 11px;
+}

@@ -1,0 +1,210 @@
+{
+  "sidebar": {
+    "companyName": "ddd",
+    "adminPanel": "Admin paneli",
+    "dashboard": "Boshqaruv paneli",
+    "map": "Xarita",
+    "drivers": "Haydovchilar",
+    "couriers": "Kuryerlar",
+    "stores": "Do'konlar",
+    "orders": "Buyurtmalar",
+    "clients": "Mijozlar",
+    "reports": "Hisobotlar",
+    "support": "Qo'llab-quvvatlash",
+    "settings": "Sozlamalar",
+    "new": "Yangi!",
+    "version": "v2.5.0",
+    "location": "Toshkent, UZ",
+    "open": "Ochish",
+    "close": "Yopish"
+  },
+  "navbar": {
+    "titles": {
+      "dashboard": "Boshqaruv paneli",
+      "map": "Xarita",
+      "drivers": "Haydovchilar",
+      "couriers": "Kuryerlar",
+      "stores": "Do'konlar",
+      "orders": "Buyurtmalar",
+      "clients": "Mijozlar",
+      "reports": "Hisobotlar",
+      "support": "Qo'llab-quvvatlash suhbatlari",
+      "settings": "Sozlamalar",
+      "driverProfile": "Haydovchi Profili",
+      "default": "Sahifa",
+      "driverApproval": "Haydovchilarni Tasdiqlash"
+    },
+    "searchPlaceholder": "Qidiruv...",
+    "role": "Administrator"
+  },
+  "dashboard": {
+    "unitCount": "{{value}} ta",
+    "unitMln": "{{value}} mln UZS",
+    "vsYesterday": "kechagiga nisbatan",
+    "vsLastWeek": "o'tgan haftaga nisbatan",
+    "vsTarget": "maqsadga nisbatan",
+    "stats": {
+      "activeDrivers": "Faol haydovchilar",
+      "activeCouriers": "Faol kuryerlar",
+      "totalOrders": "Bugungi jami buyurtmalar",
+      "dailyRevenue": "Kunlik tushum"
+    },
+    "chart": {
+      "title": "Tushum dinamikasi (Haftalik)",
+      "subtitle": "Jami daromad va buyurtmalar hajmi",
+      "thisWeek": "Ushbu hafta",
+      "lastWeek": "O'tgan hafta",
+      "week": "Hafta",
+      "month": "Oy",
+      "year": "Yil"
+    },
+    "days": {
+      "mon": "Dush",
+      "tue": "Sesh",
+      "wed": "Chor",
+      "thu": "Pay",
+      "fri": "Jum",
+      "sat": "Shan",
+      "sun": "Yak"
+    },
+    "recent": {
+      "title": "Oxirgi faoliyatlar",
+      "viewAll": "Barchasini ko'rish →",
+      "time": "Vaqt",
+      "type": "Tur",
+      "description": "Tavsif",
+      "status": "Holat"
+    },
+    "types": {
+      "taxi": "Taxi",
+      "courier": "Kuryer"
+    },
+    "statuses": {
+      "completed": "Bajarildi",
+      "inProgress": "Jarayonda",
+      "cancelled": "Bekor qilindi"
+    }
+  },
+  "drivers": {
+    "searchPlaceholder": "Ism yoki transport raqami bo'yicha qidiruv...",
+    "filters": {
+      "all": "Barchasi",
+      "online": "Online",
+      "offline": "Offline"
+    },
+    "sortLabel": "Saralash: {{value}}",
+    "sortRating": "Reyting",
+    "addDriver": "Yangi haydovchi",
+    "columns": {
+      "name": "Ism Familiya",
+      "phone": "Telefon raqami",
+      "car": "Mashina modeli va davlat raqami",
+      "status": "Holati",
+      "rating": "Reyting",
+      "actions": "Amallar"
+    },
+    "statuses": {
+      "online": "Online",
+      "busy": "Band",
+      "offline": "Offline"
+    },
+    "view": "Ko'rish",
+    "edit": "Tahrirlash",
+    "delete": "O'chirish",
+    "showing": "Jami {{from}}-{{to}} dan {{total}} ta haydovchidan ko'rsatilmoqda",
+    "prev": "Orqaga",
+    "next": "Keyingi"
+  },
+  "driverDetail": {
+    "id": "ID: {{id}}",
+    "phone": "Telefon raqam",
+    "email": "Elektron pochta",
+    "car": "Mashina modeli & plitasi",
+    "edit": "Tahrirlash",
+    "block": "Bloklash",
+    "stats": {
+      "totalOrders": "Jami buyurtmalar",
+      "totalIncome": "Jami daromad",
+      "avgRating": "O'rtacha reyting"
+    },
+    "documents": {
+      "title": "Hujjatlar va ruxsatnomalar",
+      "license": "Haydovchilik guvohnomasi",
+      "passport": "Pasport nusxasi (ID)",
+      "uploaded": "Yuklangan: {{date}}",
+      "download": "Yuklab olish"
+    },
+    "trips": {
+      "title": "Oxirgi safarlar tarixi",
+      "date": "Sana/Vaqt",
+      "from": "Ketish manzili",
+      "to": "Borish manzili",
+      "price": "Narxi",
+      "status": "Holati",
+      "today": "Bugun",
+      "yesterday": "Kecha"
+    }
+  },
+  "support": {
+    "title": "Murojaatlar",
+    "tabs": {
+      "open": "Ochiq",
+      "inProgress": "Jarayonda",
+      "closed": "Yopilgan"
+    },
+    "searchPlaceholder": "Ism, ID yoki mavzu...",
+    "tags": {
+      "driver": "Haydovchi",
+      "courier": "Kuryer",
+      "client": "Mijoz",
+      "store": "Do'kon"
+    },
+    "today": "Bugun",
+    "ticket": "Murojaat",
+    "close": "Yopish",
+    "profile": "Profil",
+    "call": "Qo'ng'iroq",
+    "block": "Bloklash",
+    "typing": "{{name}} yozmoqda...",
+    "paymentSent": "To'lov {{id}} moliya bo'limiga yuborildi",
+    "quick": {
+      "checking": "Tekshirilmoqda ⏳",
+      "until": "Bugun 18:00 gacha",
+      "resolved": "Rahmat, hal qilindi ✅"
+    },
+    "messagePlaceholder": "Xabar yozing...",
+    "info": {
+      "title": "Murojaat",
+      "id": "ID",
+      "subject": "Mavzu",
+      "opened": "Ochilgan",
+      "assignee": "Mas'ul",
+      "priority": "Ustuvorlik",
+      "high": "Yuqori",
+      "relatedTrip": "Bog'liq safar"
+    }
+  },
+  "addDriver": {
+    "title": "Kutilayotgan arizalar",
+    "filterAll": "Barchasi ({{value}})",
+    "columns": {
+      "name": "Ism Familiya",
+      "phone": "Telefon",
+      "documents": "Hujjatlar",
+      "actions": "Amallar"
+    },
+    "docs": "{{value}} dona hujjat",
+    "reject": "Rad etish",
+    "approve": "Tasdiqlash",
+    "today": "Bugun",
+    "yesterday": "Kecha",
+    "panel": {
+      "title": "Hujjatlar tahlili",
+      "license": "Haydovchilik Guvohnomasi (AB toifa)",
+      "clickToView": "Ko'rish uchun bosing",
+      "licenseNote": "Haqiqiy: Amal qilish muddati 2030-yilgacha",
+      "passport": "Pasport / ID Card",
+      "passportNote": "Tekshirildi: 01-1049283-92 taqdim etildi"
+    }
+  }
+}

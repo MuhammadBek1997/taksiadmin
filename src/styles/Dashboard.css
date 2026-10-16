@@ -1,0 +1,314 @@
+.dashboard {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 24px;
+  background: #f2f2ee;
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+}
+
+.dash-card {
+  background: #fff;
+  border-radius: 16px;
+}
+
+/* ---------- Statistika kartalari ---------- */
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.dash-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 20px;
+}
+
+.dash-stat-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.dash-stat-label {
+  color: #6b6b6b;
+  font-size: 14px;
+}
+
+.dash-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  background: #dcfce7;
+  border-radius: 999px;
+  color: #16a34a;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.dash-trend img {
+  width: 12px;
+  height: 12px;
+}
+
+.dash-trend--yellow {
+  background: #ffd21f;
+  color: #111;
+}
+
+.dash-stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.dash-stat-sub {
+  color: #a3a39e;
+  font-size: 12px;
+}
+
+.dash-stat--dark {
+  background: #121212;
+  color: #fff;
+}
+
+.dash-stat--dark .dash-stat-label {
+  color: #d4d4cf;
+}
+
+.dash-stat--dark .dash-stat-sub {
+  color: #8a8a85;
+}
+
+/* ---------- Grafik ---------- */
+.dash-chart-card {
+  padding: 22px 24px 18px;
+}
+
+.dash-chart-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.dash-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.dash-subtitle {
+  margin: 4px 0 0;
+  color: #8a8a85;
+  font-size: 13px;
+}
+
+.dash-chart-tools {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.dash-legend {
+  display: flex;
+  gap: 16px;
+  color: #6b6b6b;
+  font-size: 13px;
+}
+
+.dash-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.dot--dark { background: #111; }
+.dot--gray { background: #a3a39e; }
+
+.dash-range {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  background: #f2f2ee;
+  border-radius: 10px;
+}
+
+.dash-range button {
+  padding: 5px 14px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: #6b6b6b;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dash-range button.active {
+  background: #fff;
+  color: #111;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.dash-chart {
+  position: relative;
+  height: 170px;
+}
+
+.dash-chart img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.dash-grid-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #ebebe6;
+}
+
+.dash-grid-line--1 { top: 0; }
+.dash-grid-line--2 { top: 33.3%; }
+.dash-grid-line--3 { top: 66.6%; }
+.dash-grid-line--4 { top: 100%; }
+
+.dash-days {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  color: #a3a39e;
+  font-size: 13px;
+}
+
+/* ---------- Jadval ---------- */
+.dash-table-card {
+  padding: 22px 24px 8px;
+}
+
+.dash-table-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.dash-link {
+  color: #b45309;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.dash-link:hover {
+  text-decoration: underline;
+}
+
+.dash-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 14px;
+}
+
+.dash-table th:nth-child(1) { width: 10%; }
+.dash-table th:nth-child(2) { width: 12%; }
+.dash-table th:nth-child(3) { width: 12%; }
+.dash-table th:nth-child(5) { width: 14%; }
+
+.dash-table th {
+  padding: 12px 16px;
+  background: #f8f8f5;
+  color: #8a8a85;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.dash-table td {
+  padding: 15px 16px;
+  border-bottom: 1px solid #f0f0ec;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dash-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dash-table .strong { font-weight: 700; }
+.dash-table .muted { color: #6b6b6b; }
+
+/* Tur belgisi */
+.dash-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dash-type img {
+  width: 12px;
+  height: 12px;
+}
+
+.dash-type--taxi {
+  background: #121212;
+  color: #fff;
+}
+
+.dash-type--courier {
+  background: #fff1c2;
+  color: #111;
+}
+
+/* Holat belgisi */
+.dash-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dash-badge i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.dash-badge--completed { background: #dcfce7; color: #16a34a; }
+.dash-badge--inProgress { background: #fef3c7; color: #b45309; }
+.dash-badge--cancelled { background: #fee2e2; color: #dc2626; }
+
+@media (max-width: 1280px) {
+  .dash-stats { grid-template-columns: repeat(2, 1fr); }
+}

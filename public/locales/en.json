@@ -1,0 +1,210 @@
+{
+  "sidebar": {
+    "companyName": "ddd",
+    "adminPanel": "Admin panel",
+    "dashboard": "Dashboard",
+    "map": "Map",
+    "drivers": "Drivers",
+    "couriers": "Couriers",
+    "stores": "Stores",
+    "orders": "Orders",
+    "clients": "Clients",
+    "reports": "Reports",
+    "support": "Support",
+    "settings": "Settings",
+    "new": "New!",
+    "version": "v2.5.0",
+    "location": "Tashkent, UZ",
+    "open": "Open",
+    "close": "Close"
+  },
+  "navbar": {
+    "titles": {
+      "dashboard": "Dashboard",
+      "map": "Map",
+      "drivers": "Drivers",
+      "couriers": "Couriers",
+      "stores": "Stores",
+      "orders": "Orders",
+      "clients": "Clients",
+      "reports": "Reports",
+      "support": "Support",
+      "settings": "Settings",
+      "driverProfile": "Driver Profile",
+      "default": "Page",
+      "driverApproval": "Driver Approval"
+    },
+    "searchPlaceholder": "Search...",
+    "role": "Administrator"
+  },
+  "dashboard": {
+    "unitCount": "{{value}}",
+    "unitMln": "{{value}} mln UZS",
+    "vsYesterday": "vs yesterday",
+    "vsLastWeek": "vs last week",
+    "vsTarget": "vs target",
+    "stats": {
+      "activeDrivers": "Active drivers",
+      "activeCouriers": "Active couriers",
+      "totalOrders": "Total orders today",
+      "dailyRevenue": "Daily revenue"
+    },
+    "chart": {
+      "title": "Revenue dynamics (Weekly)",
+      "subtitle": "Total income and order volume",
+      "thisWeek": "This week",
+      "lastWeek": "Last week",
+      "week": "Week",
+      "month": "Month",
+      "year": "Year"
+    },
+    "days": {
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    },
+    "recent": {
+      "title": "Recent activity",
+      "viewAll": "View all →",
+      "time": "Time",
+      "type": "Type",
+      "description": "Description",
+      "status": "Status"
+    },
+    "types": {
+      "taxi": "Taxi",
+      "courier": "Courier"
+    },
+    "statuses": {
+      "completed": "Completed",
+      "inProgress": "In progress",
+      "cancelled": "Cancelled"
+    }
+  },
+  "drivers": {
+    "searchPlaceholder": "Search by name or vehicle number...",
+    "filters": {
+      "all": "All",
+      "online": "Online",
+      "offline": "Offline"
+    },
+    "sortLabel": "Sort: {{value}}",
+    "sortRating": "Rating",
+    "addDriver": "New driver",
+    "columns": {
+      "name": "Full name",
+      "phone": "Phone number",
+      "car": "Car model and plate number",
+      "status": "Status",
+      "rating": "Rating",
+      "actions": "Actions"
+    },
+    "statuses": {
+      "online": "Online",
+      "busy": "Busy",
+      "offline": "Offline"
+    },
+    "view": "View",
+    "edit": "Edit",
+    "delete": "Delete",
+    "showing": "Showing {{from}}-{{to}} of {{total}} drivers",
+    "prev": "Back",
+    "next": "Next"
+  },
+  "driverDetail": {
+    "id": "ID: {{id}}",
+    "phone": "Phone number",
+    "email": "Email",
+    "car": "Car model & plate",
+    "edit": "Edit",
+    "block": "Block",
+    "stats": {
+      "totalOrders": "Total orders",
+      "totalIncome": "Total income",
+      "avgRating": "Average rating"
+    },
+    "documents": {
+      "title": "Documents and permits",
+      "license": "Driver's license",
+      "passport": "Passport copy (ID)",
+      "uploaded": "Uploaded: {{date}}",
+      "download": "Download"
+    },
+    "trips": {
+      "title": "Recent trips",
+      "date": "Date/Time",
+      "from": "Pickup address",
+      "to": "Drop-off address",
+      "price": "Price",
+      "status": "Status",
+      "today": "Today",
+      "yesterday": "Yesterday"
+    }
+  },
+  "support": {
+    "title": "Tickets",
+    "tabs": {
+      "open": "Open",
+      "inProgress": "In progress",
+      "closed": "Closed"
+    },
+    "searchPlaceholder": "Name, ID or subject...",
+    "tags": {
+      "driver": "Driver",
+      "courier": "Courier",
+      "client": "Client",
+      "store": "Store"
+    },
+    "today": "Today",
+    "ticket": "Ticket",
+    "close": "Close",
+    "profile": "Profile",
+    "call": "Call",
+    "block": "Block",
+    "typing": "{{name}} is typing...",
+    "paymentSent": "Payment {{id}} was sent to the finance department",
+    "quick": {
+      "checking": "Checking ⏳",
+      "until": "By 18:00 today",
+      "resolved": "Thanks, resolved ✅"
+    },
+    "messagePlaceholder": "Write a message...",
+    "info": {
+      "title": "Ticket",
+      "id": "ID",
+      "subject": "Subject",
+      "opened": "Opened",
+      "assignee": "Assignee",
+      "priority": "Priority",
+      "high": "High",
+      "relatedTrip": "Related trip"
+    }
+  },
+  "addDriver": {
+    "title": "Pending applications",
+    "filterAll": "All ({{value}})",
+    "columns": {
+      "name": "Full name",
+      "phone": "Phone",
+      "documents": "Documents",
+      "actions": "Actions"
+    },
+    "docs": "{{value}} documents",
+    "reject": "Reject",
+    "approve": "Approve",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "panel": {
+      "title": "Document review",
+      "license": "Driver's license (category AB)",
+      "clickToView": "Click to view",
+      "licenseNote": "Valid: expires in 2030",
+      "passport": "Passport / ID Card",
+      "passportNote": "Verified: 01-1049283-92 submitted"
+    }
+  }
+}

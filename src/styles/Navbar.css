@@ -1,0 +1,205 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  height: 72px;
+  padding: 0 24px;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+}
+
+.navbar-title {
+  margin: 0;
+  color: #111;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ---------- Til tanlagich ---------- */
+.lang-dropdown {
+  position: relative;
+}
+
+.lang-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 14px;
+  background: #f2f2ee;
+  border: none;
+  border-radius: 10px;
+  color: #111;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.lang-dropdown-btn:hover {
+  background: #eaeae5;
+}
+
+.lang-dropdown-arrow {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s;
+}
+
+.lang-dropdown-arrow--open {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 1000;
+  min-width: 150px;
+  padding: 4px;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.lang-dropdown-item {
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #111;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.lang-dropdown-item:hover {
+  background: #f2f2ee;
+}
+
+.lang-dropdown-item--active {
+  background: #111;
+  color: #fff;
+}
+
+.lang-dropdown-item--active:hover {
+  background: #111;
+}
+
+/* ---------- Qidiruv ---------- */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  padding: 0 10px 0 14px;
+  background: #f2f2ee;
+  border-radius: 10px;
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #111;
+  font-size: 14px;
+}
+
+.search-input::placeholder {
+  color: #a3a39e;
+}
+
+.search-kbd {
+  padding: 2px 7px;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  color: #6b6b6b;
+  font-family: inherit;
+  font-size: 11px;
+}
+
+/* ---------- Bildirishnoma ---------- */
+.bell-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: #f2f2ee;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.bell-btn:hover {
+  background: #eaeae5;
+}
+
+.bell-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- Profil ---------- */
+.profile-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 14px 4px 4px;
+  border: 1px solid #ececec;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.profile-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: #ffd21f;
+  border-radius: 50%;
+  color: #111;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.profile-name {
+  color: #111;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.profile-role {
+  color: #8a8a85;
+  font-size: 12px;
+}
+
+.profile-arrow {
+  width: 14px;
+  height: 14px;
+}
