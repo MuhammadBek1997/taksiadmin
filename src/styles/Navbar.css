@@ -2,98 +2,142 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
-  padding: 0 24px;
+  height: 80px;
+  padding: 0 32px;
+  box-sizing: border-box;
   background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e7e7e2;
 }
 
 .navbar__title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #111827;
   margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111111;
 }
 
 .navbar__right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
+/* ---------- Qidiruv ---------- */
 .navbar__search {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 8px 14px;
-  width: 280px;
+  gap: 10px;
+  width: 300px;
+  height: 44px;
+  padding: 0 12px 0 16px;
+  box-sizing: border-box;
+  background: #f2f2ee;
+  border-radius: 12px;
+  color: #8a8a8a;
 }
 
-.navbar__search img {
-  width: 16px;
-  height: 16px;
-  opacity: 0.5;
+.navbar__search svg {
+  flex-shrink: 0;
 }
 
 .navbar__search input {
+  flex: 1;
+  min-width: 0;
   border: none;
   outline: none;
   background: transparent;
   font-size: 14px;
-  width: 100%;
+  color: #171717;
 }
 
-.navbar__icon-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #e5e7eb;
+.navbar__search input::placeholder {
+  color: #9a9a9a;
+}
+
+.navbar__kbd {
+  height: 22px;
+  padding: 0 7px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
   background: #ffffff;
+  border: 1px solid #e7e7e2;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  color: #737373;
+}
+
+/* ---------- Qo'ng'iroq ---------- */
+.navbar__icon-btn {
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  border-radius: 12px;
+  background: #f2f2ee;
+  color: #262626;
   cursor: pointer;
 }
 
-.navbar__icon-btn img {
-  width: 18px;
-  height: 18px;
+.navbar__icon-btn:hover {
+  background: #e8e8e3;
 }
 
+/* ---------- Profil ---------- */
 .navbar__profile {
   display: flex;
   align-items: center;
   gap: 10px;
+  height: 44px;
+  padding: 0 14px 0 5px;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e2;
+  border-radius: 999px;
+  background: #ffffff;
 }
 
 .navbar__avatar {
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  object-fit: cover;
+  background: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  color: #111111;
 }
 
 .navbar__profile-text {
   display: flex;
   flex-direction: column;
+  line-height: 1.2;
 }
 
 .navbar__name {
   margin: 0;
-  font-size: 14px;
-  font-weight: 600;
-  color: #111827;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111111;
 }
 
 .navbar__role {
   margin: 0;
-  font-size: 12px;
-  color: #9ca3af;
+  font-size: 11px;
+  color: #8a8a8a;
 }
 
+.navbar__profile-arrow {
+  color: #737373;
+}
+
+/* ---------- Til tanlagich ---------- */
 .lang-dropdown {
   position: relative;
 }
@@ -102,12 +146,12 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  height: 40px;
+  height: 44px;
   box-sizing: border-box;
-  padding: 0 12px;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
+  padding: 0 14px;
+  background: #f2f2ee;
+  border: none;
+  border-radius: 12px;
   font-size: 13px;
   font-weight: 500;
   color: #171717;
@@ -116,7 +160,7 @@
 }
 
 .lang-dropdown__btn:hover {
-  background: #f5f5f5;
+  background: #e8e8e3;
 }
 
 .lang-dropdown__arrow--open {
@@ -126,29 +170,90 @@
 
 .lang-dropdown__menu {
   position: absolute;
-  top: 46px;
+  top: 50px;
   right: 0;
-  width: 130px;
+  width: 140px;
   background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e7e7e2;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   z-index: 30;
 }
 
 .lang-dropdown__item {
-  padding: 9px 12px;
+  padding: 10px 14px;
   font-size: 13px;
   color: #171717;
   cursor: pointer;
 }
 
 .lang-dropdown__item:hover {
-  background: #f5f5f5;
+  background: #f7f7f3;
 }
 
 .lang-dropdown__item--active {
-  background: #f0f0f0;
+  background: var(--accent-soft);
   font-weight: 600;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1100px) {
+  .navbar__search {
+    width: 200px;
+  }
+
+  .navbar__kbd {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 16px 0 100px;
+  }
+
+  .navbar__title {
+    font-size: 18px;
+  }
+
+  .navbar__search,
+  .navbar__profile-text,
+  .navbar__profile-arrow {
+    display: none;
+  }
+
+  .navbar__profile {
+    padding: 0 5px;
+  }
+}
+
+.navbar__heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+.navbar__back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-shrink: 0;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #e7e7e2;
+  border-radius: 9px;
+  background: var(--page-bg);
+  color: #171717;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+.navbar__back:hover { background: var(--accent-soft); color: var(--accent-ink); }
+.navbar__back:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 1100px) {
+  .navbar__back span { display: none; }
+  .navbar__back { width: 36px; padding: 0; }
+  .navbar__heading { gap: 10px; }
 }

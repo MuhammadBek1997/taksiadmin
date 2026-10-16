@@ -1,0 +1,147 @@
+
+
+/* ---------- STANDART (hozirgi sariq dizayn) ---------- */
+:root {
+  --accent: #ffd21e;        /* asosiy rang: tugma, faol menyu, belgilar */
+  --accent-hover: #f5c800;  /* asosiy tugma ustiga borganda */
+  --accent-soft: #fff1b8;   /* yengil fon: faol tab, tanlangan karta */
+  --accent-ink: #111111;    /* yengil fon ustidagi matn/ikonka rangi */
+  --dark: #121212;          /* qora panel: sidebar, qora kartalar, faol tab */
+  --dark-hover: #1f1f1f;    /* qora panel ustiga borganda */
+  --page-bg: #f5f5f0;       /* sahifa foni */
+}
+
+[data-theme="green"] {
+  --accent: #5dd62c;
+  --accent-hover: #4cbf1f;
+  --accent-soft: #e4f7d9;
+  --accent-ink: #337418;
+  --dark: #0f0f0f;
+  --dark-hover: #202020;
+  --page-bg: #f8f8f8;
+}
+
+/* ---------- FIROZA / TEAL (ayollar uchun) ----------
+   Berilgan: Shiny Teal #06B2B8, Carbon Black #101516
+   --accent-hover, --accent-soft, --accent-ink, --dark-hover va --page-bg hisoblab topilgan */
+[data-theme="teal"] {
+  --accent: #06b2b8;
+  --accent-hover: #05999e;
+  --accent-soft: #d9f3f4;
+  --accent-ink: #0b6e72;
+  --dark: #101516;
+  --dark-hover: #1e2b2d;
+  --page-bg: #f4f9f9;
+}
+
+/* ---------- KEYINGI MAVZULAR UCHUN JOY ----------
+[data-theme="blue"] {
+  --accent: ...;
+  --accent-hover: ...;
+  --accent-soft: ...;
+  --accent-ink: ...;
+  --dark: ...;
+  --dark-hover: ...;
+  --page-bg: ...;
+}
+*/
+
+body {
+  background-color: var(--page-bg);
+}
+
+/* Old Money: black, warm grays, burgundy and ivory. */
+[data-theme="old-money"] {
+  --accent: #600f0c;
+  --accent-hover: #7a201a;
+  --accent-soft: #eee6df;
+  --accent-ink: #600f0c;
+  --dark: #000000;
+  --dark-hover: #333130;
+  --page-bg: #f2efe6;
+}
+
+/* Ivory text keeps burgundy actions and dark panels readable. */
+[data-theme="old-money"] :is(
+  .sb-brand__logo, .sb-link--active, .sb-badge, .navbar__avatar,
+  .set-btn--primary, .set-tariff--active .set-tariff__icon,
+  .st-btn--primary, .st-stat__icon--yellow, .cl-stat__icon--yellow,
+  .ord-stat__icon--yellow, .driver-button--yellow, .driver-stat.highlight,
+  .driver-approval-heading h3 span, .sf-steps .is-current .sf-step-number,
+  .sf-category.is-selected .st-store__icon, .sf-cover,
+  .set-theme__check, .set-font__check, .sb-link--active .sb-badge,
+  .ord-tab--active .ord-tab__count, .driver-tabs .active small,
+  .sf-steps .is-done .sf-step-number, .sf-preview-logo,
+  .sf-checklist.is-done > span, .sf-import-tabs button.is-active svg,
+  .st-chip--active svg, .st-chip--active .st-chip__count
+) { color: #f2efe6; }
+
+[data-theme="old-money"] .sb-link:not(.sb-link--active) { color: #d6d2cc; }
+[data-theme="old-money"] .sb-brand__text p { color: #9b9791; }
+[data-theme="old-money"] .set-card__sub { color: #5b5958; }
+[data-theme="old-money"] .set-theme:not(.set-theme--active) { border-color: #9b9791; }
+[data-theme="old-money"] .set-switch input:checked + .set-switch__slider::before { background: #f2efe6; }
+
+/* Olive & Bone: smoky black, olive drab, bone and floral white. */
+[data-theme="olive-bone"] {
+  --accent: #565449;
+  --accent-hover: #454338;
+  --accent-soft: #d8cfbc;
+  --accent-ink: #565449;
+  --dark: #11120c;
+  --dark-hover: #34352a;
+  --page-bg: #fffbf4;
+}
+
+/* Light text keeps olive actions and dark panels readable. */
+[data-theme="olive-bone"] :is(
+  .sb-brand__logo, .sb-link--active, .sb-badge, .navbar__avatar,
+  .set-btn--primary, .set-tariff--active .set-tariff__icon,
+  .st-btn--primary, .st-stat__icon--yellow, .cl-stat__icon--yellow,
+  .ord-stat__icon--yellow, .driver-button--yellow, .driver-stat.highlight,
+  .driver-approval-heading h3 span, .sf-steps .is-current .sf-step-number,
+  .sf-category.is-selected .st-store__icon, .sf-cover,
+  .set-theme__check, .set-font__check, .sb-link--active .sb-badge,
+  .ord-tab--active .ord-tab__count, .driver-tabs .active small,
+  .sf-steps .is-done .sf-step-number, .sf-preview-logo,
+  .sf-checklist.is-done > span, .sf-import-tabs button.is-active svg,
+  .st-chip--active svg, .st-chip--active .st-chip__count
+) { color: #fffbf4; }
+
+[data-theme="olive-bone"] .sb-link:not(.sb-link--active) { color: #d8cfbc; }
+[data-theme="olive-bone"] .sb-brand__text p { color: #d8cfbc; }
+[data-theme="olive-bone"] .set-card__sub { color: #565449; }
+[data-theme="olive-bone"] .set-theme:not(.set-theme--active) { border-color: #d8cfbc; }
+[data-theme="olive-bone"] .set-switch input:checked + .set-switch__slider::before { background: #fffbf4; }
+
+/* Plum palette supplied by the user. */
+[data-theme="plum"] {
+  --accent: #7b3fd6;
+  --accent-hover: #542394;
+  --accent-soft: #ede3fc;
+  --accent-ink: #35145c;
+  --dark: #030204;
+  --dark-hover: #35145c;
+  --page-bg: #e8e8e8;
+}
+
+
+[data-theme="plum"] :is(
+  .sb-brand__logo, .sb-link--active, .sb-badge, .navbar__avatar,
+  .set-btn--primary, .set-tariff--active .set-tariff__icon,
+  .st-btn--primary, .st-stat__icon--yellow, .cl-stat__icon--yellow,
+  .ord-stat__icon--yellow, .driver-button--yellow, .driver-stat.highlight,
+  .driver-approval-heading h3 span, .sf-steps .is-current .sf-step-number,
+  .sf-category.is-selected .st-store__icon, .sf-cover,
+  .set-theme__check, .set-font__check, .sb-link--active .sb-badge,
+  .ord-tab--active .ord-tab__count, .driver-tabs .active small,
+  .sf-steps .is-done .sf-step-number, .sf-preview-logo,
+  .sf-checklist.is-done > span, .sf-import-tabs button.is-active svg,
+  .st-chip--active svg, .st-chip--active .st-chip__count
+) { color: #ede3fc; }
+
+[data-theme="plum"] .sb-link:not(.sb-link--active) { color: #faf9f9; }
+[data-theme="plum"] .sb-brand__text p { color: #fdfcfd; }
+[data-theme="plum"] .set-card__sub { color: #542394; }
+[data-theme="plum"] .set-theme:not(.set-theme--active) { border-color: #a87bec; }
+[data-theme="plum"] .set-switch input:checked + .set-switch__slider::before { background: #ede3fc; }

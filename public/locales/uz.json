@@ -1,63 +1,424 @@
 {
   "sidebar": {
     "companyName": "Karavan",
-    "dashboard": "Панель управления",
-    "map": "Карта",
-    "drivers": "Водители",
-    "couriers": "Курьеры",
-    "orders": "Заказы",
-    "clients": "Клиенты",
-    "reports": "Отчёты",
-    "support": "Поддержка",
-    "settings": "Настройки",
+    "dashboard": "Boshqaruv paneli",
+    "map": "Xarita",
+    "drivers": "Haydovchilar",
+    "couriers": "Kuryerlar",
+    "store": "Do'konlar",
+    "orders": "Buyurtmalar",
+    "clients": "Mijozlar",
+    "reports": "Hisobotlar",
+    "support": "Yordam",
+    "settings": "Sozlamalar",
     "version": "v2.4.0 (Monochrome)",
-    "location": "Ташкент, UZ"
-},
+    "location": "Toshkent, UZ",
+    "panel": "Admin panel",
+    "new": "Yangi"
+  },
   "navbar": {
     "titles": {
-      "dashboard": "Панель управления",
-      "map": "Карта",
-      "drivers": "Водители",
-      "couriers": "Курьеры",
-      "orders": "Заказы",
-      "clients": "Клиенты",
-      "reports": "Отчёты",
-      "support": "Поддержка",
-      "settings": "Настройки системы",
-      "courierProfile": "Kuryer Profili",
-      "default": "Страница"
+      "dashboard": "Boshqaruv paneli",
+      "map": "Xarita",
+      "drivers": "Haydovchilar",
+      "couriers": "Kuryerlar",
+      "store": "Do'konlar",
+      "orders": "Buyurtmalar",
+      "clients": "Mijozlar",
+      "reports": "Hisobotlar",
+      "support": "Yordam",
+      "settings": "Tizim sozlamalari",
+      "orderDetails": "Buyurtma tafsilotlari",
+      "courierProfile": "Kuryer profili",
+      "default": "Sahifa"
     },
-    "searchPlaceholder": "Поиск...",
-    "role": "Администратор"
+    "searchPlaceholder": "Qidirish...",
+    "role": "Administrator"
   },
   "settings": {
     "general": {
-      "title": "Общие настройки",
-      "companyName": "Название компании",
+      "title": "Umumiy sozlamalar",
+      "companyName": "Kompaniya nomi",
       "companyNamePlaceholder": "Karavan Logistics LLC",
-      "phone": "Контактный телефон",
+      "phone": "Aloqa telefoni",
       "phonePlaceholder": "+998 71 200 00 20",
-      "timezone": "Ташкент (GMT+5)",
-      "save": "Сохранить"
+      "timezone": "Toshkent (GMT+5)",
+      "save": "Saqlash"
     },
     "commission": {
-      "title": "Комиссия и проценты",
-      "taxi": "Комиссия такси (%)",
-      "courier": "Комиссия курьера (%)",
-      "update": "Обновить"
+      "title": "Komissiya va foizlar",
+      "taxi": "Taksi komissiyasi (%)",
+      "courier": "Kuryer komissiyasi (%)",
+      "update": "Yangilash"
     },
     "notifications": {
-      "title": "Уведомления (SMS/Push)",
-      "newOrderSms": "Отправлять SMS при новом заказе",
-      "clientPush": "Push-уведомления для клиента",
-      "weeklyEmail": "Отправлять еженедельные отчёты на почту"
+      "title": "Bildirishnomalar (SMS/Push)",
+      "newOrderSms": "Yangi buyurtmada SMS yuborish",
+      "clientPush": "Mijoz uchun Push-bildirishnomalar",
+      "weeklyEmail": "Haftalik hisobotlarni pochtaga yuborish"
     },
     "security": {
-      "title": "Настройки безопасности",
-      "currentPassword": "Текущий пароль",
-      "newPassword": "Новый пароль",
-      "newPasswordPlaceholder": "Введите новый пароль",
-      "twoFA": "Двухфакторная аутентификация (2FA)"
+      "title": "Xavfsizlik sozlamalari",
+      "currentPassword": "Joriy parol",
+      "newPassword": "Yangi parol",
+      "newPasswordPlaceholder": "Yangi parolni kiriting",
+      "twoFA": "Ikki bosqichli autentifikatsiya (2FA)"
+    },
+    "tabs": {
+      "general": "Umumiy",
+      "tariffs": "Tariflar",
+      "commission": "Komissiyalar",
+      "staff": "Xodimlar va rollar",
+      "notifications": "Bildirishnomalar",
+      "integrations": "Integratsiyalar",
+      "security": "Xavfsizlik",
+      "appearance": "Mavzu",
+      "fonts": "Shriftlar"
+    },
+    "tariffs": {
+      "title": "Taxi tariflari",
+      "subtitle": "Narxlar barcha hududlar uchun amal qiladi",
+      "add": "Tarif qo'shish",
+      "names": {
+        "economy": "Ekonom",
+        "comfort": "Komfort",
+        "business": "Biznes"
+      },
+      "startPrice": "Boshlang'ich narx",
+      "kmPrice": "1 km narxi",
+      "waiting": "Kutish (1 daq)"
+    },
+    "rules": {
+      "title": "Qoidalar",
+      "night": {
+        "title": "Tungi tarif (+20%)",
+        "desc": "23:00 – 06:00 oralig'ida"
+      },
+      "weather": {
+        "title": "Ob-havo koeffitsienti",
+        "desc": "Yomg'ir va qorda narx avtomatik oshadi"
+      },
+      "auto": {
+        "title": "Avtomatik taqsimlash",
+        "desc": "Buyurtma eng yaqin ijrochiga beriladi"
+      },
+      "cash": {
+        "title": "Naqd to'lov",
+        "desc": "Mijoz naqd pul bilan to'lashi mumkin"
+      }
+    },
+    "staff": {
+      "title": "Xodimlar",
+      "add": "Qo'shish",
+      "colStaff": "Xodim",
+      "colRole": "Rol",
+      "roles": {
+        "admin": "Administrator",
+        "operator": "Operator",
+        "finance": "Moliya"
+      }
+    },
+    "integrations": {
+      "empty": "Tez orada"
+    },
+    "footer": {
+      "cancel": "Bekor qilish",
+      "save": "Saqlash"
+    },
+    "theme": {
+      "title": "Sayt mavzusi",
+      "subtitle": "Temani tanlang va saqlash uchun Save tugmasini bosing.",
+      "groups": {
+        "default": "Standart",
+        "men": "Erkaklar uchun",
+        "women": "Ayollar uchun"
+      },
+      "names": {
+        "default": "Standart (sariq)",
+        "green": "Yashil",
+        "teal": "Firuza",
+        "old-money": "Old Money",
+        "olive-bone": "Olive & Bone",
+        "plum": "Plum"
+      },
+      "saved": "Tema saqlandi.",
+      "saveError": "Temani saqlab bo‘lmadi. Brauzer xotirasiga ruxsatni tekshiring."
+    },
+    "fonts": {
+      "title": "Panel shrifti",
+      "subtitle": "Butun panel uchun aniq va jiddiy ko‘rinishdagi shriftni tanlang.",
+      "sample": "Aniq. Qulay. Ishonchli.",
+      "saved": "Tanlovingiz darhol qo‘llanadi va avtomatik saqlanadi.",
+      "descriptions": {
+        "onest": "Sokin va zamonaviy — ixcham, yumshoq harf shakllari.",
+        "montserrat": "Geometrik va salobatli — keng, aniq harflar.",
+        "lora": "Nafis klassika — nozik chiziqlar va serifli harflar.",
+        "robotoslab": "Xarakterli va jiddiy — mustahkam, to‘rtburchak seriflar.",
+        "golostext": "Ravon va zamonaviy — aniq harflar, qulay o‘qilish.",
+        "notoserif": "Nafis va vazmin — klassik seriflar, boy xarakter."
+      }
+    }
+  },
+  "stores": {
+    "title": "Do'konlar",
+    "subtitle": "Hamkor do'konlar va restoranlarni boshqarish",
+    "import": "Import",
+    "add": "Do'kon qo'shish",
+    "searchPlaceholder": "Do'kon nomi yoki manzil bo'yicha qidirish...",
+    "stats": {
+      "total": "Jami do'konlar",
+      "active": "Faol",
+      "moderation": "Moderatsiyada",
+      "newMonth": "Shu oy yangi"
+    },
+    "categories": {
+      "all": "Barchasi",
+      "market": "Market",
+      "pharmacy": "Dorixona",
+      "household": "Xo'jalik",
+      "restaurant": "Restoran",
+      "cafe": "Kafe",
+      "bar": "Bar",
+      "bakery": "Novvoyxona",
+      "flowers": "Gullar",
+      "electronics": "Elektronika"
+    },
+    "filters": {
+      "region": "Hudud",
+      "status": "Holat",
+      "sort": "Saralash"
+    },
+    "headers": {
+      "store": "Do'kon",
+      "type": "Turi",
+      "products": "Mahsulotlar",
+      "ordersToday": "Bugungi buyurtma",
+      "rating": "Reyting",
+      "status": "Holat",
+      "actions": "Amallar"
+    },
+    "status": {
+      "active": "Faol",
+      "moderation": "Moderatsiyada",
+      "stopped": "To'xtatilgan"
+    }
+  },
+  "orders": {
+    "stats": {
+      "today": "Bugungi buyurtmalar",
+      "progress": "Jarayonda",
+      "done": "Bajarildi",
+      "cancelled": "Bekor qilindi"
+    },
+    "tabs": {
+      "all": "Barchasi",
+      "taxi": "Taxi",
+      "courier": "Kuryer",
+      "store": "Do'kon"
+    },
+    "searchPlaceholder": "Buyurtma ID, mijoz yoki manzil...",
+    "date": "Bugun",
+    "export": "Eksport",
+    "headers": {
+      "id": "ID",
+      "client": "Mijoz",
+      "type": "Tur",
+      "route": "Marshrut",
+      "courier": "Ijrochi",
+      "amount": "Summa",
+      "time": "Vaqt",
+      "status": "Holat"
+    },
+    "types": {
+      "taxi": "Taxi",
+      "courier": "Kuryer",
+      "store": "Do'kon"
+    },
+    "status": {
+      "done": "Bajarildi",
+      "progress": "Jarayonda",
+      "new": "Yig'ilmoqda",
+      "cancel": "Bekor qilindi"
+    },
+    "footer": {
+      "showing": "Jami {{from}}-{{to}} dan {{total}} ta buyurtmadan ko'rsatilmoqda"
+    },
+    "pagination": {
+      "prev": "Orqaga",
+      "next": "Keyingi"
+    }
+  },
+  "clients": {
+    "stats": {
+      "total": "Jami mijozlar",
+      "newMonth": "Bu oy yangi",
+      "active": "Faol (30 kun)",
+      "blocked": "Bloklangan"
+    },
+    "tabs": {
+      "all": "Barchasi",
+      "active": "Faol",
+      "new": "Yangi",
+      "blocked": "Bloklangan"
+    },
+    "searchPlaceholder": "Ism yoki telefon bo'yicha qidiruv...",
+    "sort": {
+      "label": "Saralash:",
+      "orders": "Ko'p buyurtma",
+      "spend": "Ko'p sarf",
+      "rating": "Yuqori reyting"
+    },
+    "export": "Eksport",
+    "headers": {
+      "client": "Mijoz",
+      "phone": "Telefon",
+      "orders": "Buyurtmalar",
+      "spend": "Jami sarf",
+      "lastOrder": "Oxirgi buyurtma",
+      "rating": "Reyting",
+      "status": "Holat",
+      "actions": "Amallar"
+    },
+    "status": {
+      "active": "Faol",
+      "vip": "VIP",
+      "new": "Yangi",
+      "blocked": "Bloklangan"
+    },
+    "units": {
+      "mln": "mln UZS",
+      "thousand": "ming UZS"
+    },
+    "when": {
+      "today": "Bugun",
+      "yesterday": "Kecha"
+    },
+    "footer": {
+      "showing": "Jami {{from}}-{{to}} dan {{total}} ta mijozdan ko'rsatilmoqda"
+    },
+    "pagination": {
+      "prev": "Orqaga",
+      "next": "Keyingi"
+    }
+  },
+  "storeFlow": {
+    "newStoreTitle": "Yangi do‘kon qo‘shish",
+    "newStore": "Yangi do‘kon",
+    "importTitle": "Import qilish",
+    "step": "Qadam",
+    "basic": "Asosiy ma’lumotlar",
+    "location": "Manzil va ish vaqti",
+    "documents": "Hujjatlar",
+    "products": "Mahsulotlar",
+    "storeType": "Do‘kon turi",
+    "typeHint": "Har qanday biznes: market, dorixona, restoran, bar va boshqalar",
+    "other": "Boshqa",
+    "name": "Nomi",
+    "legalName": "Yuridik nomi",
+    "taxId": "INN (STIR)",
+    "phone": "Telefon raqami",
+    "address": "Manzil",
+    "addressPlaceholder": "Chilonzor tumani, Bunyodkor shoh ko‘chasi, 12",
+    "taxHint": "9 xonali STIR kiriting",
+    "hours": "Ish vaqti",
+    "commission": "Komissiya (%)",
+    "minimum": "Minimal buyurtma (UZS)",
+    "region": "Hudud",
+    "delivery": "Yetkazish vaqti (daq.)",
+    "coordinates": "Joylashuv koordinatalari",
+    "latitude": "Kenglik",
+    "longitude": "Uzunlik",
+    "locationHint": "Do‘kon manzili, ish vaqti va yetkazish muddatini kiriting.",
+    "documentsHint": "Ro‘yxatdan o‘tish hujjati yoki litsenziyani tanlang.",
+    "uploadDocuments": "Hujjatlarni tanlash",
+    "optional": "Ixtiyoriy",
+    "documentLocal": "Hozircha faqat fayl nomlari saqlanadi. Hujjatlarni serverga yuborish uchun backend ulanishi kerak.",
+    "remove": "Olib tashlash",
+    "productsHint": "Do‘konni saqlang, keyin Import orqali mahsulotlarni yuklang.",
+    "productsNote": "Mahsulotlar / menyu haqida izoh",
+    "productsNoteHint": "Assortiment yoki menyu haqida qisqacha ma’lumot...",
+    "localOnly": "Ma’lumotlar shu brauzerda saqlanadi. Server bilan sinxronlash ulanmagan.",
+    "saveFailed": "Saqlab bo‘lmadi. Brauzer xotirasi to‘lgan yoki bloklangan.",
+    "draftSaved": "Qoralama saqlandi.",
+    "storeCreated": "Do‘kon qo‘shildi va moderatsiya holatida saqlandi.",
+    "saveDraft": "Qoralama sifatida saqlash",
+    "cancel": "Bekor qilish",
+    "back": "Orqaga",
+    "next": "Keyingi qadam",
+    "create": "Do‘konni saqlash",
+    "preview": "Ilovada ko‘rinishi",
+    "live": "Jonli",
+    "cover": "Muqova",
+    "logo": "Logo",
+    "branding": "Logo va muqova",
+    "new": "Yangi",
+    "minutes": "daq",
+    "min": "Min",
+    "completion": "To‘ldirilish holati",
+    "imageLimit": "PNG, JPG yoki WebP · har biri 1 MB gacha",
+    "uploadStep": "Fayl yuklash",
+    "mapStep": "Ustunlarni moslash",
+    "reviewStep": "Tekshirish",
+    "importStep": "Import",
+    "targetStore": "Do‘kon",
+    "uploadedFile": "Yuklangan fayl",
+    "rows": "qator",
+    "loading": "Yuklanmoqda…",
+    "replaceFile": "Boshqa fayl yuklash",
+    "uploadFile": "Fayl yuklash",
+    "fileLimit": "20 MB gacha · 5 000 qatorgacha",
+    "template": "Shablonni yuklab olish",
+    "templateFailed": "Shablonni yaratib bo‘lmadi. Qayta urinib ko‘ring.",
+    "otherSources": "Boshqa manbalar",
+    "copyStore": "Boshqa do‘kondan nusxa",
+    "byLink": "Jadval havolasi orqali",
+    "sync": "Avtomatik sinxronlash",
+    "quickCopy": "Filiallar uchun qulay",
+    "sheetsHint": "Google Sheets’dan XLSX yoki CSV yuklab olib, shu yerga yuklang.",
+    "apiHint": "1C / API orqali sinxronlash uchun backend integratsiyasi kerak.",
+    "copyHint": "Nusxalash uchun manba do‘kondan mahsulotlar faylini eksport qilib, bu yerga yuklang.",
+    "uploadTitle": "Ma’lumotlarni import qiling",
+    "uploadHint": "Excel yoki CSV faylni tanlang. Ustunlarni moslab, qatorlarni tekshirgandan keyin importni tasdiqlaysiz.",
+    "mappingHint": "Fayldagi ustunlarni maydonlarga bog‘lang",
+    "mapped": "moslandi",
+    "skipColumn": "O‘tkazib yuborish",
+    "requiredColumns": "Majburiy maydonlar",
+    "reviewHint": "Xatoli qatorlar import qilinmaydi. To‘g‘ri qatorlarni tasdiqlang.",
+    "result": "Natija",
+    "firstFifty": "Dastlabki 50 qator ko‘rsatilgan. Barcha qatorlar tekshirildi.",
+    "importDone": "Import yakunlandi",
+    "importedRows": "qator saqlandi",
+    "anotherImport": "Yana import qilish",
+    "totalRows": "Jami qatorlar",
+    "valid": "To‘g‘ri",
+    "invalid": "Xatoli",
+    "categoriesCount": "Kategoriyalar",
+    "skipInvalid": "ta xatoli qator o‘tkazib yuboriladi",
+    "ready": "Tekshirishga tayyor",
+    "importAction": "Import qilish",
+    "category": "Kategoriya",
+    "price": "Narx",
+    "stock": "Qoldiq",
+    "barcode": "Shtrix-kod",
+    "image": "Rasm URL",
+    "note": "Izoh",
+    "required": "Majburiy maydon to‘ldirilmagan",
+    "invalidNumber": "Narx yoki qoldiq noto‘g‘ri",
+    "invalidUrl": "Rasm havolasi noto‘g‘ri",
+    "invalidTaxId": "STIR 9 xonali bo‘lishi kerak",
+    "invalidPhone": "Telefon raqami noto‘g‘ri",
+    "invalidFile": "Faylni o‘qib bo‘lmadi. To‘g‘ri XLSX yoki CSV fayl tanlang.",
+    "fileType": "Faqat .xlsx va .csv fayllar qabul qilinadi.",
+    "emptyFile": "Faylda sarlavha va kamida bitta ma’lumot qatori bo‘lsin.",
+    "fileTooLarge": "Fayl hajmi 20 MB dan oshmasin.",
+    "tooManyRows": "Ko‘pi bilan 5 000 qator va 100 ustun yuklang.",
+    "importTypes": {
+      "products": "Mahsulotlar",
+      "menu": "Menyu (restoran/kafe)",
+      "medicines": "Dori-darmonlar",
+      "categories": "Kategoriyalar",
+      "inventory": "Narx va qoldiq",
+      "stores": "Do‘konlar"
     }
   }
 }

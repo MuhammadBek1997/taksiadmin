@@ -1,97 +1,80 @@
 import React from 'react'
 import '../styles/Sidebar.css'
-import { MoveHorizontal } from 'lucide-react'
+import {
+    MoveHorizontal,
+    LayoutDashboard,
+    MapPin,
+    Car,
+    Package,
+    Store,
+    ShoppingCart,
+    Users,
+    TrendingUp,
+    MessageCircle,
+    SlidersHorizontal,
+} from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+
+const ITEMS = [
+    { to: '/', end: true, icon: LayoutDashboard, key: 'dashboard' },
+    { to: '/map', icon: MapPin, key: 'map' },
+    { to: '/drivers', icon: Car, key: 'drivers' },
+    { to: '/couriers', icon: Package, key: 'couriers' },
+    { to: '/store', icon: Store, key: 'store', badge: true },
+    { to: '/orders', icon: ShoppingCart, key: 'orders' },
+    { to: '/clients', icon: Users, key: 'clients' },
+    { to: '/reports', icon: TrendingUp, key: 'reports' },
+    { to: '/support', icon: MessageCircle, key: 'support' },
+    { to: '/settings', icon: SlidersHorizontal, key: 'settings' },
+]
 
 export default function Sidebar({ collapsed, setCollapsed }) {
     const { t } = useTranslation()
 
+    const companyName = t('sidebar.companyName')
+
     return (
-        <div className={`sidebar ${collapsed ? "sidebar--collapsed" : ""}`}>
+        <div className={`sidebar ${collapsed ? 'sidebar--collapsed' : ''}`}>
 
             <button className="toggle-icon" onClick={() => setCollapsed(!collapsed)}>
-                <MoveHorizontal size={20} className={collapsed ? "icon-rotated" : ""} />
+                <MoveHorizontal size={18} />
             </button>
-            <div className="karvon-part">
-                <div className="black">
-                    <img src="/K.png" alt="" />
-                </div>
-                <div className='h33'>
-                    {!collapsed && <h3>{t('sidebar.companyName')}</h3>}
-                </div>
+
+       {/* logo  */}
+            <div className="sb-brand">
+                <div className="sb-brand__logo">{companyName.charAt(0)}</div>
+                {!collapsed && (
+                    <div className="sb-brand__text">
+                        <h3>{companyName}</h3>
+                        <p>{t('sidebar.panel')}</p>
+                    </div>
+                )}
             </div>
-            <div className="facilities">
-                <NavLink
-                    to="/" end
-                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
-                >
-                    <img src="/dashboard.png" alt="" />
-                    {!collapsed && <p>{t('sidebar.dashboard')}</p>}
-                </NavLink>
-                <NavLink
-                    to="/map"
-                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
-                >
-                    <img src="/map.png" alt="" />
-                    {!collapsed && <p>{t('sidebar.map')}</p>}
-                </NavLink>
-                <NavLink
-                    to="/drivers"
-                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
-                >
-                    <img src="/drivers.png" alt="" />
-                    {!collapsed && <p>{t('sidebar.drivers')}</p>}
-                </NavLink>
-                <NavLink
-                    to="/couriers"
-                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
-                >
-                    <img src="/couriers.png" alt="" />
-                    {!collapsed && <p>{t('sidebar.couriers')}</p>}
-                </NavLink>
-                <NavLink
-                    to="/orders"
-                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
-                >
-                    <img src="/orders.png" alt="" />
-                    {!collapsed && <p>{t('sidebar.orders')}</p>}
-                </NavLink>
-                <NavLink
-                    to="/clients"
-                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
-                >
-                    <img src="/clients.png" alt="" />
-                    {!collapsed && <p>{t('sidebar.clients')}</p>}
-                </NavLink>
-                <NavLink
-                    to="/reports"
-                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
-                >
-                    <img src="/reports.png" alt="" />
-                    {!collapsed && <p>{t('sidebar.reports')}</p>}
-                </NavLink>
-                <NavLink
-                    to="/support"
-                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
-                >
-                    <img src="/support.png" alt="" />
-                    {!collapsed && <p>{t('sidebar.support')}</p>}
-                </NavLink>
-                <NavLink
-                    to="/settings"
-                    className={({ isActive }) => `fac ${isActive ? "fac--active" : ""}`}
-                >
-                    <img src="/settings.png" alt="" />
-                    {!collapsed && <p>{t('sidebar.settings')}</p>}
-                </NavLink>
-            </div>
+
+           {/* menu  */}
+            <nav className="sb-nav">
+                {ITEMS.map(({ to, end, icon: Icon, key, badge }) => (
+                    <NavLink
+                        key={key}
+                        to={to}
+                        end={end}
+                        title={collapsed ? t(`sidebar.${key}`) : undefined}
+                        className={({ isActive }) => `sb-link ${isActive ? 'sb-link--active' : ''}`}
+                    >
+                        <Icon size={18} />
+                        {!collapsed && <span className="sb-link__label">{t(`sidebar.${key}`)}</span>}
+                    </NavLink>
+                ))}
+            </nav>
+
+            {/* pastgi matn */}
             {!collapsed && (
-                <div className="div-end">
+                <div className="sb-footer">
                     <p>{t('sidebar.version')}</p>
                     <p>{t('sidebar.location')}</p>
                 </div>
             )}
         </div>
-    );
+    )
 }

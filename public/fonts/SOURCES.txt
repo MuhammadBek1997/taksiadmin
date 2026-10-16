@@ -1,0 +1,6 @@
+Onest: https://github.com/google/fonts/tree/main/ofl/onest
+Montserrat: https://github.com/google/fonts/tree/main/ofl/montserrat
+Lora: https://github.com/google/fonts/tree/main/ofl/lora
+Roboto Slab: https://github.com/google/fonts/tree/main/apache/robotoslab
+Golos Text: https://github.com/google/fonts/tree/main/ofl/golostext
+Noto Serif: https://github.com/google/fonts/tree/main/ofl/notoserif

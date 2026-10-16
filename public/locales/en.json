@@ -5,13 +5,16 @@
     "map": "Map",
     "drivers": "Drivers",
     "couriers": "Couriers",
+    "store": "Stores",
     "orders": "Orders",
     "clients": "Clients",
     "reports": "Reports",
     "support": "Support",
     "settings": "Settings",
     "version": "v2.4.0 (Monochrome)",
-    "location": "Tashkent, UZ"
+    "location": "Tashkent, UZ",
+    "panel": "Admin panel",
+    "new": "New"
   },
   "navbar": {
     "titles": {
@@ -19,11 +22,13 @@
       "map": "Map",
       "drivers": "Drivers",
       "couriers": "Couriers",
+      "store": "Stores",
       "orders": "Orders",
       "clients": "Clients",
       "reports": "Reports",
       "support": "Support",
       "settings": "System Settings",
+      "orderDetails": "Order Details",
       "courierProfile": "Courier Profile",
       "default": "Page"
     },
@@ -58,6 +63,362 @@
       "newPassword": "New Password",
       "newPasswordPlaceholder": "Enter new password",
       "twoFA": "Two-Factor Authentication (2FA)"
+    },
+    "tabs": {
+      "general": "General",
+      "tariffs": "Tariffs",
+      "commission": "Commissions",
+      "staff": "Staff & roles",
+      "notifications": "Notifications",
+      "integrations": "Integrations",
+      "security": "Security",
+      "appearance": "Theme",
+      "fonts": "Fonts"
+    },
+    "tariffs": {
+      "title": "Taxi tariffs",
+      "subtitle": "Prices apply to all regions",
+      "add": "Add tariff",
+      "names": {
+        "economy": "Economy",
+        "comfort": "Comfort",
+        "business": "Business"
+      },
+      "startPrice": "Starting price",
+      "kmPrice": "Price per km",
+      "waiting": "Waiting (1 min)"
+    },
+    "rules": {
+      "title": "Rules",
+      "night": {
+        "title": "Night rate (+20%)",
+        "desc": "Between 23:00 – 06:00"
+      },
+      "weather": {
+        "title": "Weather coefficient",
+        "desc": "Price rises automatically in rain and snow"
+      },
+      "auto": {
+        "title": "Auto dispatch",
+        "desc": "Order goes to the nearest driver"
+      },
+      "cash": {
+        "title": "Cash payment",
+        "desc": "Customer can pay in cash"
+      }
+    },
+    "staff": {
+      "title": "Staff",
+      "add": "Add",
+      "colStaff": "Employee",
+      "colRole": "Role",
+      "roles": {
+        "admin": "Administrator",
+        "operator": "Operator",
+        "finance": "Finance"
+      }
+    },
+    "integrations": {
+      "empty": "Coming soon"
+    },
+    "footer": {
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "theme": {
+      "title": "Site theme",
+      "subtitle": "Preview a theme, then click Save to keep it.",
+      "groups": {
+        "default": "Default",
+        "men": "For men",
+        "women": "For women"
+      },
+      "names": {
+        "default": "Default (yellow)",
+        "green": "Green",
+        "teal": "Shiny teal",
+        "old-money": "Old Money",
+        "olive-bone": "Olive & Bone",
+        "plum": "Plum"
+      },
+      "saved": "Theme saved.",
+      "saveError": "Could not save the theme. Check browser storage permissions."
+    },
+    "fonts": {
+      "title": "Panel font",
+      "subtitle": "Choose a clear, professional font for the whole panel.",
+      "sample": "Clear. Precise. Reliable.",
+      "saved": "Your selection is applied and saved automatically.",
+      "descriptions": {
+        "onest": "Quiet and modern — compact, softly shaped letters.",
+        "montserrat": "Geometric and confident — wide, distinctive letters.",
+        "lora": "Elegant and classic — fine strokes and graceful serifs.",
+        "robotoslab": "Distinctive and assured — strong, square serifs.",
+        "golostext": "Clear and contemporary — crisp letters, effortless reading.",
+        "notoserif": "Elegant and composed — classic serifs with a rich character."
+      }
+    }
+  },
+  "stores": {
+    "title": "Stores",
+    "subtitle": "Manage partner stores and restaurants",
+    "import": "Import",
+    "add": "Add store",
+    "searchPlaceholder": "Search by store name or address...",
+    "stats": {
+      "total": "Total stores",
+      "active": "Active",
+      "moderation": "In moderation",
+      "newMonth": "New this month"
+    },
+    "categories": {
+      "all": "All",
+      "market": "Market",
+      "pharmacy": "Pharmacy",
+      "household": "Household",
+      "restaurant": "Restaurant",
+      "cafe": "Cafe",
+      "bar": "Bar",
+      "bakery": "Bakery",
+      "flowers": "Flowers",
+      "electronics": "Electronics"
+    },
+    "filters": {
+      "region": "Region",
+      "status": "Status",
+      "sort": "Sort"
+    },
+    "headers": {
+      "store": "Store",
+      "type": "Type",
+      "products": "Products",
+      "ordersToday": "Orders today",
+      "rating": "Rating",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "active": "Active",
+      "moderation": "In moderation",
+      "stopped": "Stopped"
+    }
+  },
+  "orders": {
+    "stats": {
+      "today": "Today's orders",
+      "progress": "In progress",
+      "done": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "tabs": {
+      "all": "All",
+      "taxi": "Taxi",
+      "courier": "Courier",
+      "store": "Store"
+    },
+    "searchPlaceholder": "Order ID, customer or address...",
+    "date": "Today",
+    "export": "Export",
+    "headers": {
+      "id": "ID",
+      "client": "Customer",
+      "type": "Type",
+      "route": "Route",
+      "courier": "Driver",
+      "amount": "Amount",
+      "time": "Time",
+      "status": "Status"
+    },
+    "types": {
+      "taxi": "Taxi",
+      "courier": "Courier",
+      "store": "Store"
+    },
+    "status": {
+      "done": "Completed",
+      "progress": "In progress",
+      "new": "Collecting",
+      "cancel": "Cancelled"
+    },
+    "footer": {
+      "showing": "Showing {{from}}-{{to}} of {{total}} orders"
+    },
+    "pagination": {
+      "prev": "Back",
+      "next": "Next"
+    }
+  },
+  "clients": {
+    "stats": {
+      "total": "Total customers",
+      "newMonth": "New this month",
+      "active": "Active (30 days)",
+      "blocked": "Blocked"
+    },
+    "tabs": {
+      "all": "All",
+      "active": "Active",
+      "new": "New",
+      "blocked": "Blocked"
+    },
+    "searchPlaceholder": "Search by name or phone...",
+    "sort": {
+      "label": "Sort:",
+      "orders": "Most orders",
+      "spend": "Highest spend",
+      "rating": "Top rated"
+    },
+    "export": "Export",
+    "headers": {
+      "client": "Customer",
+      "phone": "Phone",
+      "orders": "Orders",
+      "spend": "Total spent",
+      "lastOrder": "Last order",
+      "rating": "Rating",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "active": "Active",
+      "vip": "VIP",
+      "new": "New",
+      "blocked": "Blocked"
+    },
+    "units": {
+      "mln": "M UZS",
+      "thousand": "K UZS"
+    },
+    "when": {
+      "today": "Today",
+      "yesterday": "Yesterday"
+    },
+    "footer": {
+      "showing": "Showing {{from}}-{{to}} of {{total}} customers"
+    },
+    "pagination": {
+      "prev": "Back",
+      "next": "Next"
+    }
+  },
+  "storeFlow": {
+    "newStoreTitle": "Add a new store",
+    "newStore": "New store",
+    "importTitle": "Import",
+    "step": "Step",
+    "basic": "Basic information",
+    "location": "Address & hours",
+    "documents": "Documents",
+    "products": "Products",
+    "storeType": "Store type",
+    "typeHint": "For markets, pharmacies, restaurants, bars and more",
+    "other": "Other",
+    "name": "Name",
+    "legalName": "Legal name",
+    "taxId": "Tax ID",
+    "phone": "Phone number",
+    "address": "Address",
+    "addressPlaceholder": "12 Bunyodkor Avenue, Chilonzor",
+    "taxHint": "Enter a 9-digit tax ID",
+    "hours": "Opening hours",
+    "commission": "Commission (%)",
+    "minimum": "Minimum order (UZS)",
+    "region": "Region",
+    "delivery": "Delivery time (min)",
+    "coordinates": "Location coordinates",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "locationHint": "Set the address, opening hours and delivery time.",
+    "documentsHint": "Select a registration document or license.",
+    "uploadDocuments": "Select documents",
+    "optional": "Optional",
+    "documentLocal": "Only filenames are saved for now. Uploading document contents requires a backend connection.",
+    "remove": "Remove",
+    "productsHint": "Save the store, then upload products from Import.",
+    "productsNote": "Products / menu notes",
+    "productsNoteHint": "A short description of the range or menu...",
+    "localOnly": "Data is saved in this browser. Server sync is not connected.",
+    "saveFailed": "Could not save. Browser storage is full or blocked.",
+    "draftSaved": "Draft saved.",
+    "storeCreated": "Store added with moderation status.",
+    "saveDraft": "Save draft",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next step",
+    "create": "Save store",
+    "preview": "App preview",
+    "live": "Live",
+    "cover": "Cover",
+    "logo": "Logo",
+    "branding": "Logo & cover",
+    "new": "New",
+    "minutes": "min",
+    "min": "Min",
+    "completion": "Completion",
+    "imageLimit": "PNG, JPG or WebP · up to 1 MB each",
+    "uploadStep": "Upload file",
+    "mapStep": "Map columns",
+    "reviewStep": "Review",
+    "importStep": "Import",
+    "targetStore": "Store",
+    "uploadedFile": "Uploaded file",
+    "rows": "rows",
+    "loading": "Loading…",
+    "replaceFile": "Replace file",
+    "uploadFile": "Upload file",
+    "fileLimit": "Up to 20 MB · 5,000 rows",
+    "template": "Download template",
+    "templateFailed": "Could not create template. Please try again.",
+    "otherSources": "Other sources",
+    "copyStore": "Copy from another store",
+    "byLink": "From a spreadsheet link",
+    "sync": "Automatic sync",
+    "quickCopy": "For store branches",
+    "sheetsHint": "Download an XLSX or CSV from Google Sheets and upload it here.",
+    "apiHint": "1C / API sync requires a backend integration.",
+    "copyHint": "Export a products file from the source store, then upload it here.",
+    "uploadTitle": "Import your data",
+    "uploadHint": "Choose an Excel or CSV file. Map columns and review rows before confirming the import.",
+    "mappingHint": "Match file columns to the destination fields",
+    "mapped": "mapped",
+    "skipColumn": "Skip column",
+    "requiredColumns": "Required fields",
+    "reviewHint": "Invalid rows will be skipped. Confirm the valid rows.",
+    "result": "Result",
+    "firstFifty": "Showing the first 50 rows. All rows were validated.",
+    "importDone": "Import complete",
+    "importedRows": "rows saved",
+    "anotherImport": "Import another file",
+    "totalRows": "Total rows",
+    "valid": "Valid",
+    "invalid": "Invalid",
+    "categoriesCount": "Categories",
+    "skipInvalid": "invalid rows will be skipped",
+    "ready": "Ready to review",
+    "importAction": "Import",
+    "category": "Category",
+    "price": "Price",
+    "stock": "Stock",
+    "barcode": "Barcode",
+    "image": "Image URL",
+    "note": "Note",
+    "required": "Required field is missing",
+    "invalidNumber": "Invalid price or stock",
+    "invalidUrl": "Invalid image URL",
+    "invalidTaxId": "Tax ID must have 9 digits",
+    "invalidPhone": "Invalid phone number",
+    "invalidFile": "Could not read the file. Choose a valid XLSX or CSV.",
+    "fileType": "Only .xlsx and .csv files are supported.",
+    "emptyFile": "The file needs a header and at least one data row.",
+    "fileTooLarge": "File must be 20 MB or smaller.",
+    "tooManyRows": "Use at most 5,000 rows and 100 columns.",
+    "importTypes": {
+      "products": "Products",
+      "menu": "Menu (restaurant/café)",
+      "medicines": "Medicines",
+      "categories": "Categories",
+      "inventory": "Price & stock",
+      "stores": "Stores"
     }
   }
 }

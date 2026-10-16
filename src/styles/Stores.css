@@ -1,0 +1,535 @@
+.st-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.st-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.st-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #111111;
+}
+
+.st-subtitle {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #737373;
+}
+
+.st-head__actions {
+  display: flex;
+  gap: 10px;
+}
+
+.st-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 38px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e7e7e2;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.st-btn:hover {
+  background: #f7f7f3;
+}
+
+.st-btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.st-btn--primary:hover {
+  background: var(--accent-hover);
+}
+
+/* ---------- STATISTIKA ---------- */
+.st-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.st-stat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 106px;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e7e7e2;
+  border-radius: 16px;
+}
+
+.st-stat--dark {
+  background: var(--dark);
+  border-color: var(--dark);
+}
+
+.st-stat__label {
+  font-size: 13px;
+  color: #737373;
+}
+
+.st-stat--dark .st-stat__label {
+  color: #d4d4d4;
+}
+
+.st-stat__value {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: #111111;
+}
+
+.st-stat--dark .st-stat__value {
+  color: #ffffff;
+}
+
+.st-stat__value--warn {
+  color: #c2570c;
+}
+
+.st-stat__icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #f0f0ec;
+  color: #404040;
+}
+
+.st-stat__icon--yellow {
+  background: var(--accent);
+  color: #111111;
+}
+
+/* ---------- KATEGORIYA CHIPLARI ---------- */
+.st-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.st-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e7e7e2;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #262626;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.st-chip:hover:not(.st-chip--active) {
+  background: #f7f7f3;
+}
+
+.st-chip__count {
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+.st-chip--active {
+  background: var(--dark);
+  border-color: var(--dark);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.st-chip--active svg {
+  color: var(--accent);
+}
+
+.st-chip--active .st-chip__count {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.st-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.st-search {
+  position: relative;
+  flex: 0 1 383px;
+  min-width: 220px;
+  height: 40px;
+}
+
+.st-search svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8a8a8a;
+  pointer-events: none;
+}
+
+.st-search input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 14px 0 40px;
+  background: #ffffff;
+  border: 1px solid #e7e7e2;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  color: #171717;
+}
+
+.st-search input::placeholder {
+  color: #9a9a9a;
+}
+
+.st-selects {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.st-select {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 40px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e7e7e2;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #262626;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.st-select svg {
+  color: #8a8a8a;
+}
+
+.st-select:hover {
+  background: #f7f7f3;
+}
+
+/* ---------- JADVAL ---------- */
+.st-table {
+  background: #ffffff;
+  border: 1px solid #e7e7e2;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.st-row {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 257fr) minmax(0, 126fr) minmax(0, 82fr) minmax(0, 97fr)
+    minmax(0, 59fr) minmax(0, 104fr) minmax(0, 90fr);
+  align-items: center;
+  min-height: 69px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #efefea;
+  font-size: 14px;
+  color: #171717;
+}
+
+.st-row:last-child {
+  border-bottom: none;
+}
+
+.st-row > div {
+  min-width: 0;
+}
+
+.st-row--head {
+  min-height: 42px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+
+/* Do'kon ustuni */
+.st-store {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.st-store__icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.st-store__icon--amber  { background: #fef3c7; color: #d97706; }
+.st-store__icon--green  { background: #dcfce7; color: #16a34a; }
+.st-store__icon--red    { background: #fee2e2; color: #dc2626; }
+.st-store__icon--blue   { background: #dbeafe; color: #2563eb; }
+.st-store__icon--purple { background: #ede9fe; color: #7c3aed; }
+
+.st-store__text {
+  min-width: 0;
+}
+
+.st-store__name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.st-store__addr {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #8a8a8a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.st-store__addr svg {
+  flex-shrink: 0;
+}
+
+/* Tur belgisi */
+.st-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  padding: 0 9px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.st-type--amber  { background: #fef3c7; color: #b45309; }
+.st-type--green  { background: #dcfce7; color: #15803d; }
+.st-type--red    { background: #fee2e2; color: #b91c1c; }
+.st-type--blue   { background: #dbeafe; color: #1d4ed8; }
+.st-type--purple { background: #ede9fe; color: #6d28d9; }
+
+/* Reyting */
+.st-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+}
+
+/* Holat belgisi */
+.st-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.st-status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.st-status--active  { background: #dcfce7; color: #15803d; }
+.st-status--active::before  { background: #22c55e; }
+
+.st-status--pending { background: #fef3c7; color: #b45309; }
+.st-status--pending::before { background: #f59e0b; }
+
+.st-status--stopped { background: #e8e8e4; color: #525252; }
+.st-status--stopped::before { background: #8a8a8a; }
+
+/* Amallar */
+.st-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.st-act {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  background: #f0f0ec;
+  color: #525252;
+  cursor: pointer;
+}
+
+.st-act:hover {
+  background: #e5e5df;
+}
+
+.st-act--danger {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.st-act--danger:hover {
+  background: #fecaca;
+}
+
+/* ============ RESPONSIVE 768px - faqat o'lchamlar kichrayadi ============ */
+@media (max-width: 768px) {
+  .st-title {
+    font-size: 18px;
+  }
+
+  .st-subtitle {
+    font-size: 12px;
+  }
+
+  .st-btn {
+    height: 34px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .st-stats {
+    gap: 10px;
+  }
+
+  .st-stat {
+    min-height: 84px;
+    padding: 14px;
+  }
+
+  .st-stat__label {
+    font-size: 11px;
+  }
+
+  .st-stat__value {
+    margin-top: 8px;
+    font-size: 24px;
+  }
+
+  .st-stat__icon {
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .st-chip {
+    height: 28px;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+
+  .st-search,
+  .st-select {
+    height: 34px;
+  }
+
+  .st-search input,
+  .st-select {
+    font-size: 12px;
+  }
+
+  .st-select {
+    padding: 0 10px;
+  }
+
+  .st-row {
+    min-height: 58px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .st-row--head {
+    min-height: 36px;
+    font-size: 10px;
+  }
+
+  .st-store {
+    gap: 8px;
+  }
+
+  .st-store__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .st-store__name {
+    font-size: 12px;
+  }
+
+  .st-store__addr {
+    font-size: 10px;
+  }
+
+  .st-type,
+  .st-status {
+    height: 20px;
+    padding: 0 7px;
+    font-size: 10px;
+  }
+
+  .st-act {
+    width: 24px;
+    height: 24px;
+  }
+}
+.st-head__actions a, .st-actions a { text-decoration: none; }
+.st-table { overflow-x: auto; }
+.st-row { min-width: 860px; }

@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react'
 import '../styles/Navbar.css'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ChevronDown } from 'lucide-react'
+import { ArrowLeft, ChevronDown, Search, Bell } from 'lucide-react'
 
 const LANGUAGES = [
     { code: 'uz', label: "O'zbek" },
@@ -44,30 +44,49 @@ const Navbar = () => {
         "/reports": "navbar.titles.reports",
         "/support": "navbar.titles.support",
         "/settings": "navbar.titles.settings",
+        "/store/new": "storeFlow.newStoreTitle",
+        "/store/import": "storeFlow.importTitle",
+        "/store": "navbar.titles.store"
     }
 
     const currentTitleKey = titleKeys[location.pathname] || "navbar.titles.default"
 
     const orderMatch = location.pathname.match(/^\/orders\/(.+)$/)
-    const title = orderMatch
-        ? `${t('navbar.titles.orderDetails')} • #${orderMatch[1]}`
-        : t(currentTitleKey)
+    const courierMatch = location.pathname.match(/^\/couriers\/(.+)$/)
+
+    let title = t(currentTitleKey)
+    if (location.pathname === '/drivers') title = 'Taxi Haydovchilari'
+    else if (location.pathname === '/drivers/approval') title = 'Haydovchilarni Tasdiqlash'
+    else if (location.pathname.startsWith('/drivers/')) title = 'Haydovchi Profili'
+    if (orderMatch) {
+        title = `${t('navbar.titles.orderDetails')} • #${orderMatch[1]}`
+    } else if (courierMatch) {
+        title = `${t('navbar.titles.courierProfile')} • #${courierMatch[1]}`
+    }
 
     return (
         <div className="navbar">
-            <h2 className="navbar__title">{title}</h2>
+            <div className="navbar__heading">
+                {location.pathname.startsWith('/drivers/') && (
+                    <Link className="navbar__back" to="/drivers" aria-label="Orqaga qaytish" title="Orqaga qaytish">
+                        <ArrowLeft size={18} />
+                        <span>Orqaga</span>
+                    </Link>
+                )}
+                <h2 className="navbar__title">{title}</h2>
+            </div>
 
             <div className="navbar__right">
                 <div className="navbar__search">
-                    <img src="/search.png" alt="" />
+                    <Search size={16} />
                     <input type="text" placeholder={t('navbar.searchPlaceholder')} />
+                    <kbd className="navbar__kbd">⌘K</kbd>
                 </div>
 
                 <button className="navbar__icon-btn">
-                    <img src="/alarm-clock.png" alt="" />
+                    <Bell size={18} />
                 </button>
 
-                {}
                 <div className="lang-dropdown" ref={langRef}>
                     <button
                         className="lang-dropdown__btn"
@@ -93,11 +112,12 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar__profile">
-                    <img src="/Avatar.png" alt="" className="navbar__avatar" />
+                    <span className="navbar__avatar">SR</span>
                     <div className="navbar__profile-text">
                         <p className="navbar__name">Shoxrux R.</p>
                         <p className="navbar__role">{t('navbar.role')}</p>
                     </div>
+                    <ChevronDown size={16} className="navbar__profile-arrow" />
                 </div>
             </div>
         </div>
@@ -105,3 +125,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

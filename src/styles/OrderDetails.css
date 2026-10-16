@@ -1,4 +1,4 @@
-/* App.css dagi .app-content padding 24px + 8px = 32px (dizayndagi chekka) */
+
 .od-page {
   display: grid;
   grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
@@ -23,7 +23,7 @@
   box-sizing: border-box;
 }
 
-/* ---------- CHAP: BUYURTMA TARKIBI ---------- */
+/* CHAP: BUYURTMA TARKIBI */
 .od-card__head {
   display: flex;
   align-items: center;
@@ -144,7 +144,7 @@
   background: #e5e5e5;
 }
 
-/* ---------- O'NG: MIJOZ VA KURYER ---------- */
+/*O'NG MIJOZ VA KURYER*/
 .od-block-title {
   margin-bottom: 16px;
   font-size: 14px;

@@ -1,16 +1,16 @@
-* {
-  font-family: "Inter", sans-serif;
-}
-
 .sidebar {
-  border-right: 1px solid #d1d5db;
-  width: 240px;
-  background: #ffffff;
-  transition: width 0.2s ease-in-out;
-  flex-shrink: 0;
   position: sticky;
+  top: 0;
   left: 0;
-  bottom: 0;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 252px;
+  height: 100vh;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background: var(--dark);
+
   z-index: 20;
 }
 
@@ -18,85 +18,10 @@
   width: 84px;
 }
 
-.content {
-  position: absolute;
-  flex: 1;
-  padding: 16px;
-}
-
-.toggle-btn {
-  padding: 8px 16px;
-  cursor: pointer;
-}
-
-.karvon-part {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  position: relative;
-}
-
-.h33 {
-  margin-top: 26px;
-}
-
-.black--collapsed {
-  width: 45px;
-}
-
-.black {
-  background-color: black;
-  width: 45px;
-  height: 45px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  margin-top: 28px;
-  margin-left: 18px;
-}
-
-.facilities {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  margin-left: 30px;
-  gap: 10px;
-  margin-top: 30px;
-}
-
-.sidebar--collapsed .facilities {
-  margin-left: 19px;   
-}
-
-.fac {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  text-decoration: none;
-}
-
-.fac p {
-  font-size: 15px;
-  color: #737373;
-  text-decoration: none;
-}
-
-.div-end {
-  margin-left: 35px;
-  margin-top: 160px;
-}
-
-.div-end p {
-  font-size: 13px;
-  color: #a3a3a3;
-}
-
+/* ---------- Yig'ish tugmasi ---------- */
 .toggle-icon {
   position: absolute;
-  top: 20px;
+  top: 28px;
   right: -16px;
   width: 32px;
   height: 32px;
@@ -104,15 +29,141 @@
   align-items: center;
   justify-content: center;
   z-index: 10;
-  border: 1px solid #d1d5db;
+  border: 1px solid #e7e7e2;
   background: #ffffff;
+  color: #111111;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-.toggle-icon {
-  color: #111827; 
+/* ---------- Logo ---------- */
+.sb-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 22px 22px;
 }
 
+.sidebar--collapsed .sb-brand {
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sb-brand__logo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #111111;
+}
+
+.sb-brand__text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.sb-brand__text p {
+  margin: 3px 0 0;
+  font-size: 11px;
+  color: #a3a3a3;
+}
+
+/* ---------- Menyu ---------- */
+.sb-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 14px;
+}
+
+.sb-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 42px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #d4d4d4;
+}
+
+.sb-link svg {
+  flex-shrink: 0;
+}
+
+.sb-link:hover:not(.sb-link--active) {
+  background: var(--dark-hover);
+  color: #ffffff;
+}
+
+.sb-link--active {
+  background: var(--accent);
+  color: #111111;
+  font-weight: 600;
+}
+
+.sb-link__label {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sb-badge {
+  height: 18px;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  background: var(--accent);
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.sb-link--active .sb-badge {
+  background: #111111;
+  color: var(--accent);
+}
+
+.sidebar--collapsed .sb-nav {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.sidebar--collapsed .sb-link {
+  justify-content: center;
+  padding: 0;
+}
+
+/* ---------- Pastki matn ---------- */
+.sb-footer {
+  margin-top: auto;
+  padding: 20px 24px;
+}
+
+.sb-footer p {
+  margin: 0;
+  font-size: 12px;
+  color: #737373;
+}
+
+/* ---------- Mobil ---------- */
 @media (max-width: 768px) {
   .sidebar {
     position: fixed;
@@ -124,19 +175,8 @@
   }
 
   .sidebar:not(.sidebar--collapsed) {
-    width: 240px;
-    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
-  }
-
-  .h33,
-  .fac p,
-  .div-end {
-    display: none;
-  }
-
-  .sidebar:not(.sidebar--collapsed) .h33,
-  .sidebar:not(.sidebar--collapsed) .fac p,
-  .sidebar:not(.sidebar--collapsed) .div-end {
-    display: block;
+    width: 252px;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.25);
   }
 }
+
