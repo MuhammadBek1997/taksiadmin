@@ -8,6 +8,11 @@ import DriverDetail from './pages/DriverDetail'
 import AddDriver from './pages/AddDriver'
 import Support from './pages/Support'
 import './App.css'
+import Sidebar from './components/Sidebar'
+import Navbar from './components/Navbar'
+import Support from './components/Support'
+import Chat from './components/Chat'
+
 
 function App() {
   return (
